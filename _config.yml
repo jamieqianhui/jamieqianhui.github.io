@@ -13,7 +13,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Jamie Lu Qianhui
-  tagline: Data Analyst. Avid Investor.
+  tagline: Data Analyst
   date_format: "%b %-d, %Y"
 
   # generate social links in footer
