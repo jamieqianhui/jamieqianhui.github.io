@@ -5,20 +5,23 @@ date:   2019-06-05 09:55:36 +0800
 categories: API Python
 ---
 Creating your **API GET Request** can be be *hassle-free, easy and quick* with **Python**!
-The entire process can be completed by running a 80-line code .py file
+The entire process can be completed by running a 80-line code .py file. Click on the blog post title to find out more!
 
+I have stored the .py file code in my github repository too, you can find it here:
 {% highlight html %}
-This note **demonstrates** some of what [Markdown][some/link] is *capable of doing*.
+https://github.com/jamieqianhui/URA_API_GETrequest
 {% endhighlight %}
 
-1. Import the necessary libraries
+Below is a 9-step guide on how I constructed the GET request in python 
+
+#### 1. Import the required python libraries
 
 ```python
 import json
 import requests
 ```
-# Register an account with URA to obtain your access key 
-# Send GET Request to retrieve daily Token
+#### 2. Register an account with URA to obtain your access key 
+#### 3. Send GET Request to retrieve daily token
 
 ```python
 api_accesskey = 'Key in your access key'
@@ -45,7 +48,8 @@ else:
 ```
 
 
-# Determine previous month of current period based on Today's date to enter 'refPeriod' Parameter
+#### 4. Determine the previous month of current period based on Today's date to enter 'refPeriod' Parameter
+
 ```python
 import pandas as pd
 today = pd.to_datetime('today')
@@ -55,7 +59,7 @@ refperiod = period[-4:]
 print(refperiod)
 ```
 
-#send GET Request to retrieve a list of median rentals of private non-landed residential properties based on refPeriod
+#### 5. Send GET Request to retrieve a list of median rentals of private non-landed residential properties based on refPeriod
 
 ```python
 api_url_base2= 'https://www.ura.gov.sg/uraDataService/invokeUraDS?service=PMI_Resi_Rental&'
@@ -83,30 +87,35 @@ else:
     print('[!] Request Failed')
 ```
 
-#flatten nested data in json file
+#### 6. Flatten nested data in json file
+
 ```python
 from pandas.io.json import json_normalize
 data = data_info['Result']
 flattendata = json_normalize(data,'rental',['project','street','y','x'],errors='ignore')
 ```
-# URA Publishes previous month's data; Determine previous month mmYY from period YYqq
+
+#### 7. URA Publishes previous month's data; Determine previous month mmYY from period YYqq
+
 ```python
 previousMMYY = previous_month.to_period('D').strftime('%m%Y')
 leaseDate = previousMMYY[0:2]+previousMMYY[-2:]
 print(leaseDate)
 ```
-#get data for the latest month only from a quarterly-period dataset
+#### 8. Get data for the latest month only from a quarterly-period dataset
+
 ```python
 LatestMonthData = flattendata.loc[flattendata['leaseDate'] == leaseDate]
 print(LatestMonthData)
 ```
-#convert json data to .csv file, removing the index number
+#### 9. Convert json data to .csv file, removing the index number
+
 ```python
 LatestMonthData.to_csv('flatten_data_' + leaseDate +'.csv', index=False)
 
 ```
 
-## And it's completed! in 80-lines of python code!
+## And it's completed! In 80-lines of python code!
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
