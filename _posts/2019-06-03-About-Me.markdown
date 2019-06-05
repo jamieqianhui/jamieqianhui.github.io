@@ -8,7 +8,7 @@ categories: Bio Resume
  data analytics, technology related information 📊 and some real estate knowledge 🏦 with data enthusiasts! <br> [Read More][Read-more]
 
 ```python
-About Me (In 3rd person POV)
+About Me (In third person POV)
 ```
 > Trained in data analytics and real estate, Jamie has delivered scalable data-driven projects with a focus on revenue acquisitions, feasibility studies and business process improvement to real estate consulting firms, government agency and property developer conglomerate. She is experienced in the fields of Data Analytics, Market Research, Real Estate Cash Flow Analysis and is passionate about data stewardship and wealth management. 
 
