@@ -5,12 +5,8 @@ date:   2019-06-05 09:55:36 +0800
 categories: API Python
 ---
 Creating your **API GET Request** can be be *hassle-free, easy and quick* with **Python**!
-The entire process can be completed by running a 80-line code .py file. Click on the blog post title to find out more!
+The entire process can be completed by following a **9-step guide** (80-line code .py file). Click on the blog post title to find out more! I have stored the .py file in my github repository too, you can find it [here][here]
 
-I have stored the .py file code in my github repository too, you can find it here:
-{% highlight html %}
-https://github.com/jamieqianhui/URA_API_GETrequest
-{% endhighlight %}
 
 Below is a 9-step guide on how I constructed the GET request in python 
 
@@ -21,6 +17,11 @@ import json
 import requests
 ```
 #### 2. Register an account with URA to obtain your access key 
+Find out more here:
+{% highlight html %}
+https://www.ura.gov.sg/maps/api/#introduction
+{% endhighlight %}
+
 #### 3. Send GET Request to retrieve daily token
 
 ```python
@@ -112,13 +113,13 @@ print(LatestMonthData)
 
 ```python
 LatestMonthData.to_csv('flatten_data_' + leaseDate +'.csv', index=False)
-
 ```
 
-## And it's completed! In 80-lines of python code!
+## And it's completed! In 80-lines of python code! :)
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
+[here]: https://github.com/jamieqianhui/URA_API_GETrequest
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
