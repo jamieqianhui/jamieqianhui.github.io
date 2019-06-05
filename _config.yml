@@ -2,8 +2,8 @@ title: Jamie QH - Welcome to my data blog!
 author: GitHub User
 email: jamieqianhui@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
- This is a space where I document and share real estate knowledge, 
- data analytics and technology related information with data enthusiasts! 
+ This is a space where I document and share data analytics, technology related information
+ and real estate knowledge with data enthusiasts! 
 
 show_excerpts: true # set to true to show excerpts on the homepage
 
@@ -56,10 +56,3 @@ plugins:
   - jekyll-seo-tag
 #  - jekyll-feed
 
-compress_html:
-    ignore:
-        envs:
-        - development
-        - stage
-
-exclude: ["README.md", "Gemfile", "plainwhite.gemspec"]
