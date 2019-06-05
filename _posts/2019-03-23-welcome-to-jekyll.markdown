@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "Integrating razorpay into your webapp"
-date:   2019-03-23 21:03:36 +0530
-categories: Javascript NodeJS
+title:  "Constructing GET Request using Python"
+date:   2019-06-05 09:55:36 +0800
+categories: API Python
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+Creating your **API GET Request** can be be [hassle-free, easy and quick][1] with *Python*!
+The entire process can be completed by running a 80-line code .py file
 
 ```javascript
 const Razorpay = require('razorpay');
