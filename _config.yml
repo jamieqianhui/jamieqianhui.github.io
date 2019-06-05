@@ -1,6 +1,6 @@
 title: Your awesome title
 author: GitHub User
-email: your-email@domain.com
+email: jamieqianhui@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -12,15 +12,15 @@ show_excerpts: true # set to true to show excerpts on the homepage
 sass:
   sass_dir: _sass
 plainwhite:
-  name: Adam Denisov
-  tagline: Developer. Designer
+  name: Jamie Lu Qianhui
+  tagline: Data Analyst. Avid Investor
   date_format: "%b %-d, %Y"
 
   # generate social links in footer
   social_links:
     twitter: thelehhman
-    github:  thelehhman
-    linkedIn: in/thelehhman
+    github:  jamieqianhui
+    linkedIn: in/jamieluqianhui
     rss: rss
     # dribbble: jekyll
     # facebook: jekyll
