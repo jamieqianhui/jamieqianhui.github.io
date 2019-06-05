@@ -52,10 +52,9 @@ else:
 
 
 #### 4. Determine the previous month of current period based on Today's date to enter 'refPeriod' Parameter
-The complete dataset of the previous month will only be published by the 15th day of this month. The API requires user to specify the parameter ``python reference period 'refPeriod'``. We will need to determine what is the previous month in QQYY format of the current period (e.g. May in 2q19) based on today's date. If the current period is May (2q19), then previous month would be April (2q19).
+The complete dataset of the previous month will only be published by the 15th day of this month. The API requires user to specify the parameter ``python reference period 'refPeriod'``. We will need to determine what is the previous month in qqYY format of the current period (e.g. May in 2q19) based on today's date. If the current period is May (2q19), then previous month would be April (2q19).
 
 ```python
-import pandas as pd
 today = pd.to_datetime('today')
 previous_month = today - pd.DateOffset(months=1)
 period = previous_month.to_period('D').strftime('%Yq%q')
@@ -118,7 +117,7 @@ print(LatestMonthData)
 LatestMonthData.to_csv('flatten_data_' + leaseDate +'.csv', index=False)
 ```
 
-## And it's completed! In 80-lines of python code! :)
+### And it's completed! In 80-lines of python code! :)
 
 
 [here]: https://github.com/jamieqianhui/URA_API_GETrequest
