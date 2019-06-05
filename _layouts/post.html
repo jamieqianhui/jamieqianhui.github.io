@@ -18,19 +18,19 @@ layout: default
 	{{ content }}
 </div>
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-<div class="about-container">
-<a class="about-link" href="{{ page.url | relative_url }}">
-	<h2 class="about-title">{{ page.title | escape }}</h2>
+<div class="About-container">
+<a class="About-link" href="{{ page.url | relative_url }}">
+	<h2 class="About-title">{{ page.title | escape }}</h2>
 </a>
-<div class="about-meta">
-	<ul class="about-categories">
+<div class="About-meta">
+	<ul class="About-categories">
 		{%- for tag in page.categories -%}
 		<li>{{ tag }}</li>
 		{%- endfor -%}
 	</ul>
 	<div class="post-date"><i class="icon-calendar"></i>{{ page.date | date: date_format }}</div>
 </div>
-<div class="about">
+<div class="About">
 	{{ content }}
 </div>
 {%- if site.plainwhite.disqus_shortname -%}
