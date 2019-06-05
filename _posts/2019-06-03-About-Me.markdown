@@ -1,5 +1,5 @@
 ---
-layout: About
+layout: posts
 title:  "About Me"
 date:   2019-06-03 13:24:36 +0800
 categories: Bio Resume
