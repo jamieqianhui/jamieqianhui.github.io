@@ -48,8 +48,12 @@ header_pages:
  - about.md
 
 # Build settings
+<<<<<<< HEAD
 markdown: kramdown
 theme: plainwhite
+=======
+remote_theme: thelehhman/plainwhite-jekyll
+>>>>>>> 25db711aacd9f0bdf4ac1bfd97000e9a9479c558
 
 
 plugins:
