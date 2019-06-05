@@ -63,8 +63,8 @@ refperiod = period[-4:]
 print(refperiod)
 ```
 
-#### 5. Send GET Request to retrieve a list of median rentals of private non-landed residential properties based on refPeriod
-
+#### 5. Send GET Request to retrieve data based on `refPeriod`
+To retrieve a list of median rentals of private non-landed residential properties:
 ```python
 api_url_base2= 'https://www.ura.gov.sg/uraDataService/invokeUraDS?service=PMI_Resi_Rental&'
 
