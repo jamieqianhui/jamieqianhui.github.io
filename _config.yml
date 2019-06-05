@@ -1,10 +1,10 @@
-title: Your awesome title
+title: Welcome to my blog!
 author: GitHub User
 email: jamieqianhui@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+ This is a space where I document and share real estate knowledge, 
+ data analytics and technology related information with data enthusiasts! 
+
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -13,7 +13,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Jamie Lu Qianhui
-  tagline: Data Analyst. Avid Investor
+  tagline: Data Analyst. Avid Investor.
   date_format: "%b %-d, %Y"
 
   # generate social links in footer
