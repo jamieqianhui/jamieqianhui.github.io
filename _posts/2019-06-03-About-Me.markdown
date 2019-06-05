@@ -1,18 +1,19 @@
 ---
 layout: post
-title:  "More about me"
-date:   2019-06-05 13:24:36 +0800
-categories: CV Resume FirstPost
+title:  "About Me"
+date:   2019-06-03 13:24:36 +0800
+categories: Bio Resume
 ---
 **Hello! Welcome to my blog! :)** This is a space where I document and share 
- data analytics, technology related information and some real estate knowledge with data enthusiasts! Click on the *blog post title* to find out more about me.
+ data analytics, technology related information and some real estate knowledge with data enthusiasts! Click on the *blog post title* to find out more.
 
 ```python
-About me
+About Me
 ```
-Trained in data analytics and real estate, Jamie is experienced in the areas of Data Analytics, Market Research, Real Estate Cash Flow Analysis and Transaction Management. She has delivered scalable and data-driven projects with a focus on revenue acquisitions, feasibility studies and business process improvement to real estate consulting firms, government agency and property developer conglomerate. Jamie graduated with a Bachelor of Science degree in Real Estate (Honours) from National University of Singapore and is passionate about big data analytics, data stewardship and wealth management. 
+> Trained in data analytics and real estate, Jamie is experienced in the areas of Data Analytics, Market Research, Real Estate Cash Flow Analysis and Transaction Management. She has delivered scalable and data-driven projects with a focus on revenue acquisitions, feasibility studies and business process improvement to real estate consulting firms, government agency and property developer conglomerate. Jamie graduated with a Bachelor of Science degree in Real Estate (Honours) from National University of Singapore and is passionate about big data analytics, data stewardship and wealth management. 
 
-View my summarised resume on Linkedin **[here][linkedin-profile]**
+
+You can view my summarised resume on Linkedin **[here][linkedin-profile]**
  
 
 #### Skills:
@@ -22,4 +23,10 @@ View my summarised resume on Linkedin **[here][linkedin-profile]**
 + **Microsoft Software**: SQL Server Management Studio (SSMS), SQL Server Integration Service (SSIS), Visual Studio, MS Flow
 + **Other Technologies**: Git, Spyder, Jupyter Notebook, R Studio, SAP HANA
 
+```python
+Contact Me
+```
+Feel free to contact me at [jamieqianhui@gmail.com][email-add] for anything related to data analytics and real estate! 
+
 [linkedin-profile]: https://linkedin.com/in/jamieluqianhui/
+[email-add]: jamieqianhui@gmail.com
