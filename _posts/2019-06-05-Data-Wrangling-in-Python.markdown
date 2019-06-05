@@ -1,11 +1,10 @@
 ---
 layout: post
 title:  "Data Wrangling using Pandas"
-date:   2019-06-05 13:24:36 +0800
+date:   2019-06-04 13:24:36 +0800
 categories: Python Pandas
 ---
-Creating your **API GET Request** can be be *hassle-free, easy and quick* with **Python**!
-The entire process can be completed by running a 80-line code .py file. Click on the blog post title to find out more!
+Sharinga few simple tips on data wrangling using Python Pandas data frame!
 
 I have stored the .py file code in my github repository too, you can find it here:
 {% highlight html %}
