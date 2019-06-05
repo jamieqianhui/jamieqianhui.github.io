@@ -4,7 +4,7 @@ title:  "Constructing GET Request using Python"
 date:   2019-06-05 09:55:36 +0800
 categories: API Python
 ---
-Creating your **API GET Request** can be be [hassle-free, easy and quick][1] with *Python*!
+Creating your **API GET Request** can be be *hassle-free, easy and quick* with **Python**!
 The entire process can be completed by running a 80-line code .py file
 
 ```javascript
