@@ -55,3 +55,11 @@ remote_theme: thelehhman/plainwhite-jekyll
 plugins:
   - jekyll-seo-tag
 #  - jekyll-feed
+
+compress_html:
+    ignore:
+        envs:
+        - development
+        - stage
+
+exclude: ["README.md", "Gemfile", "plainwhite.gemspec"]
