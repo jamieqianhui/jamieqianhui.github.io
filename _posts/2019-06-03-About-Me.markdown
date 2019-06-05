@@ -10,13 +10,12 @@ categories: Bio Resume
 ```python
 About Me
 ```
-> Trained in data analytics and real estate, Jamie is experienced in the areas of Data Analytics, Market Research, Real Estate Cash Flow Analysis and Transaction Management. She has delivered scalable and data-driven projects with a focus on revenue acquisitions, feasibility studies and business process improvement to real estate consulting firms, government agency and property developer conglomerate. Jamie graduated with a Bachelor of Science degree in Real Estate (Honours) from National University of Singapore and is passionate about big data analytics, data stewardship and wealth management. 
-
+> Trained in data analytics and real estate, Jamie has delivered scalable data-driven projects with a focus on revenue acquisitions, feasibility studies and business process improvement to real estate consulting firms, government agency and property developer conglomerate. She is experienced in the fields of Data Analytics, Market Research, Real Estate Cash Flow Analysis and is passionate about data stewardship and wealth management. 
 
 You can view my summarised resume on Linkedin **[here][linkedin-profile]**
  
 
-#### Skills:
+### Skills:
 
 + **Programming Languages**: Python, SQL (MsSQL & Transact-SQL), HTML, R
 + **Visualiation Tools**: Tableau, SAS Visual Analytics
