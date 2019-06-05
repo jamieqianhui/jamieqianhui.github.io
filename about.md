@@ -13,13 +13,10 @@ layout: page
 <h2>Skills</h2>
 
 <ul class="skill-list">
-	<li>Python</li>
-	<li>SQL - MS SQL and T-SQL</li>
-	<li>HTML</li>
-	<li>R</li>
+	<li>*Languages*: Python, SQL - MS SQL & T-SQL, HTML, R</li>
 	<li>Git</li>
-	<li>Visualiation Tools: Tableau, SAS Visual Analytics</li>
-	<li>Microsoft Software: SQL Server Management Studio (SSMS), SQL Server Integration Service (SSIS), Visual Studio, MS Flow </li>
+	<li>*Visualiation Tools*: Tableau, SAS Visual Analytics</li>
+	<li>*Microsoft Software*: SQL Server Management Studio (SSMS), SQL Server Integration Service (SSIS), Visual Studio, MS Flow </li>
 </ul>
 
 <h2>Projects</h2>
