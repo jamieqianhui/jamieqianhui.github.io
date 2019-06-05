@@ -16,10 +16,10 @@ Trained in data analytics and real estate, Jamie is experienced in the areas of 
 
 #### Skills:
 
-...* **Programming Languages**: Python, SQL - MS SQL & T-SQL, HTML, R
-...* **Visualiation Tools**: Tableau, SAS Visual Analytics
-...* **Microsoft Software**: SQL Server Management Studio (SSMS), SQL Server Integration Service (SSIS), Visual Studio, MS Flow
-...* **Other Technologies**: Git, Spyder, Jupyter Notebook, R Studio, SAP HANA
++ **Programming Languages**: Python, SQL - MS SQL & T-SQL, HTML, R
++ **Visualiation Tools**: Tableau, SAS Visual Analytics
++ **Microsoft Software**: SQL Server Management Studio (SSMS), SQL Server Integration Service (SSIS), Visual Studio, MS Flow
++ **Other Technologies**: Git, Spyder, Jupyter Notebook, R Studio, SAP HANA
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
