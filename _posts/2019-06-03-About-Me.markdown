@@ -5,7 +5,7 @@ date:   2019-06-03 13:24:36 +0800
 categories: Bio Resume
 ---
 **Hello! Welcome to my blog! :)** This is a space where I document and share 
- data analytics, technology related information and some real estate knowledge with data enthusiasts! Click on the *blog post title* to find out more.
+ data analytics, technology related information and some real estate knowledge with data enthusiasts! <br> [Read More][Read-more]
 
 ```python
 About Me
@@ -30,3 +30,4 @@ Feel free to contact me at [jamieqianhui@gmail.com][email-add] for anything rela
 
 [linkedin-profile]: https://linkedin.com/in/jamieluqianhui/
 [email-add]: jamieqianhui@gmail.com
+[Read-more]: https://jamieqianhui.github.io/bio/resume/2019/06/03/About-Me.html
