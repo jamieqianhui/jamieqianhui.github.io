@@ -49,8 +49,7 @@ plainwhite:
 
 # Build settings
 remote_theme: thelehhman/plainwhite-jekyll
-theme: plainwhite
-$ bundle
+
 
 plugins:
   - jekyll-seo-tag
