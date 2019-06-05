@@ -5,7 +5,7 @@ date:   2019-06-05 09:55:36 +0800
 categories: API Python
 ---
 Creating your **API GET Request** can be be hassle-free and easy with **Python**!
-The entire process can be completed by following a **9-step guide** (80-line code .py file), with the context of retrieving data from URA's web API. Click on the blog post title to find out more! You can find the pure .py file stored in my **[github repository][here]** as well.
+The entire process can be completed by following a **9-step guide** (80-line code .py file). Click on the blog post title to find out more! You can find the pure .py file stored in my **[github repository][here]** as well.
 
 
 Below is a 9-step guide on how I constructed the GET request in python to fetch data from URA's web API. 
