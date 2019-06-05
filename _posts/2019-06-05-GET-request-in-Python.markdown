@@ -53,7 +53,7 @@ else:
 
 
 #### 4. Determine the previous month of current period based on Today's date to enter 'refPeriod' Parameter
-The complete dataset of the previous month will only be published by the 15th day of this month. The API requires user to specify the parameter ``reference period 'refPeriod'``. We will need to determine what is the previous month in qqYY format of the current period (e.g. May in 2q19) based on today's date. If the current period is May (2q19), then previous month would be April (2q19).
+The complete dataset of the previous month will only be published by the 15th day of this month. The API requires user to specify the parameter `reference period 'refPeriod'`. We will need to determine what is the previous month in qqYY format of the current period (e.g. 2Q19) based on today's date. If the current period is April (2Q19), then previous month would be March (1Q19).
 
 ```python
 today = pd.to_datetime('today')
