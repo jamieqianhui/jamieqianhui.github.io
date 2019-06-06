@@ -2,7 +2,7 @@
 ### Personal Portfolio and Blog <br>
 
 A continuous work-in-progress!<br>
-Blog theme is forked from [thelehhman][thelehhman]<br>
+###### Blog theme is forked from [thelehhman][thelehhman]<br>
 
 #### You can visit my blog here: https://jamieqianhui.github.io/ <br><br>
 
