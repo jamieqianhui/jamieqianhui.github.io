@@ -1,10 +1,10 @@
 # jamieqianhui.github.io
 Personal Portfolio and Blog <br>
-**A continuous work-in-progress!** <br>
+
 > Blog theme is forked from [thelehhman][thelehhman] <br></br>
 <br> 
-
 + You can visit my blog here: https://jamieqianhui.github.io/ <br>
+*A continuous work-in-progress!* <br>
 
 ## 2019 Entries
 + 2019-06-03 About Me
