@@ -26,6 +26,7 @@ Skills:
 + **Cloud Service**: Microsoft Azure, SAP Cloud Platform
 + **Workflow Automation**: Microsoft Flow
 + **Other Technologies**: Git, Trello, LucidChart
++ **Industry Knowledge**: Real Estate Cashflow Analysis, Financial Statement Analysis, REITs Analysis
 
 ```python
 Contact Me
