@@ -4,7 +4,7 @@ title:  "About Me"
 date:   2019-06-03 13:24:36 +0800
 categories: Bio Resume
 ---
-**Hello! Welcome to my blog! 😊** This is a space where I document and share 
+**Hello! Welcome to my blog! 😊** This is a space where I document my learnings and share 
  data analytics, technology related information 📊 and some real estate knowledge 🏦 with data enthusiasts! <br> 
  **[Read More][Read-more]**
 
