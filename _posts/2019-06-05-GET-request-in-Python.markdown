@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Constructing GET Request using Python"
+title:  "Constructing GET Request with Python"
 date:   2019-06-05 09:55:36 +0800
 categories: API Python
 ---
