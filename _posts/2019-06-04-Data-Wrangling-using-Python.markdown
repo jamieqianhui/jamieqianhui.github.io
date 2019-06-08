@@ -19,7 +19,7 @@ df = pd.read_excel('yourexcelfile.xlsx', sheet_name='Sheet1')
 ```
 Let's take the dataframe of your monthly budget excel sheet (in wide format) to be the following:<br>
 | Project Name    | Project I/D   | G/L Account   | Jan-19 | Feb-19| ... | Dec-19|
-| ----------------|:-------------:|:-------------:|: -----:|:-----:|:---:| -----:|
+| ----------------|---------------|---------------|--------|-------|-----|-------|
 | Office Space A  | 200589        | 1000400       |  $1600 |  $900 | ... | $1100 |
 | Office Space A  | 200589        | 8000800       |   $120 |  $100 | ... |  $200 |
 | Office Space B  | 320999        | 2222800       |  $3000 | $3200 | ... | $3100 |
