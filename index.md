@@ -1,4 +1,5 @@
 ---
-layout: home <br>
+layout: home 
+---
 layout: about
 ---
