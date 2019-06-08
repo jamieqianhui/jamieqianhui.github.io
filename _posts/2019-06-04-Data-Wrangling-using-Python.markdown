@@ -18,7 +18,7 @@ import pandas as pd
 df = pd.read_excel('yourexcelfile.xlsx', sheet_name='Sheet1')
 ```
 Let's take the dataframe of your monthly budget excel sheet (in wide format) to be the following:<br>
-<img src="{{ "/assets/DF_wideformat.png" | https://jamieqianhui.github.io }}" alt="{{ jamielqh@copyright }}">
+![DF_wideformat]({{ '/assets/DF_wideformat.png' | relative_url }}) 
 | Project Name    | Project I/D   | G/L Account   | Jan-19 | Feb-19 | ... | Dec-19|<br>
 | --------------- | ------------- | ------------- | ------ | ------ | --- | ----- |<br>
 | Office Space A  | 200589        | 1000400       |  $1600 |   $900 | ... | $1100 |<br>
