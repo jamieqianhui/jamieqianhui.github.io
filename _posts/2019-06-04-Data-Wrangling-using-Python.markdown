@@ -20,14 +20,14 @@ df = pd.read_excel('yourexcelfile.xlsx', sheet_name='Sheet1')
 Let's take the dataframe of your excel sheet to be as follow:
 
 
-**Step 3: Convert df from wide to long format (gather columns into rows)**
+**Step 3: Convert df from wide to long format (gather columns into rows)** <br>
 We will use pd.melt to gather columns into rows. Identify all the columns which you want to retain (no changes made), these will be labelled as `id_vars`. Identify the column which you want to convert from columns to rows format, this will be labelled as `var_name`.
 Assign a name to the value of your converted column as `value_name`.
 ```python
 mdf = pd.melt (df, id_vars=["col 1", "col 2","col 3"], var_name="Period", value_name= "Monthly Budget")
 ```
 
-**Step 3: Replace '' spaces and `/` in mdf column names with `_` (underscores)**
+**Step 3: Replace '' spaces and `/` in mdf column names with `_` (underscores)** <br>
 Let's standardise the column names with lower case and replacing all special characters with underscores
 
 ```python
