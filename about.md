@@ -3,18 +3,22 @@ layout: page
 title:  "About"
 
 ---
-**Hello! Welcome to my blog!** This is a space where I document my learnings and share 
- data analytics, technology related information and some real estate knowledge with data enthusiasts! <br> 
 
-<br>
+## About 
+**Hello! Welcome to my blog!** This is a space where I document my learnings and share 
+ data analytics/tech-related information and some real estate knowledge with data enthusiasts! 
+<br> 
 <br>
 ## Summary 
 
-> Trained in data analytics and real estate, Jamie has delivered scalable data-driven projects with a focus on revenue acquisitions, feasibility studies and business process improvement to real estate consulting firms, government agency and property developer conglomerate. She is experienced in the fields of Data Analytics and Real Estate Cash Flow Analysis and is passionate about data stewardship and wealth management. 
+> Trained in data analytics and real estate, Jamie has delivered scalable data-driven projects with a focus on revenue acquisitions, feasibility studies and business process improvement to real estate consulting firms, government agency and property developer conglomerate. She is experienced in the fields of Data Analytics, Market Research and Real Estate Cash Flow Analysis. Jamie is passionate about data stewardship and make investments in ETFs/Stocks during her free time. 
+
 <br>
+
 You can view my summarised resume on [Linkedin][Linkedin]
  
 <br>
+
 ## Skills
 
 + **Programming Languages**: Python, SQL (MsSQL & Transact-SQL), HTML, R
@@ -27,6 +31,7 @@ You can view my summarised resume on [Linkedin][Linkedin]
 + **Industry Knowledge**: Real Estate Cashflow Analysis, Financial Statement Analysis, REITs Analysis
 
 <br>
+
 ## Contact Me
 
 > Feel free to contact me at [jamieqianhui@gmail.com][email-add] for anything related to data analytics and real estate! 
