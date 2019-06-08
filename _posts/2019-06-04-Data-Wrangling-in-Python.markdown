@@ -9,7 +9,7 @@ Sharing a few simple tips on data wrangling using Python `Pandas` library! Does 
 
 ### Step 1: Import the required libraries 
 
-```Python
+```Javascript
 import pandas as pd
 ```
 
