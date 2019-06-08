@@ -1,6 +1,3 @@
 ---
 layout: home 
 ---
----
-layout: about
----
