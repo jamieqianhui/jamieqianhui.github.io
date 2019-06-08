@@ -25,7 +25,7 @@ Let's take the dataframe of your monthly budget excel sheet (in wide format) to 
 We will use pd.melt to gather columns into rows. First, identify all the columns which you want to retain (no changes made), these will be labelled as `id_vars`. Next, identify the column which you want to convert from columns to rows format, this will be labelled as `var_name`.
 Then, assign a name to the value of your converted column as `value_name`.
 ```python
-mdf = pd.melt (df, id_vars=["Project", "Project I/D"], 
+mdf = pd.melt (df, id_vars=["Project Name", "Project I/D", "G/L Account"], 
 	  var_name="Period", value_name= "Monthly Budget")
 ```
 
@@ -41,9 +41,9 @@ Store the new ID column as `proj_gl_id`
 ```python
 mdf['proj_gl_id'] = mdf['project_name'].map(str) +'-'+ mdf['project_id'].map(str) + '-' + mdf['gl_account'].map(str)
 ```
-**Step 6: Split "material_group" column, expand it, stack it, then join back to the original mdf**
+**Step 6: Split "gl_account" column, expand it, stack it, then join back to the original mdf**
 ```python
-sdf = mdf.drop('material_group', axis=1).join(mdf['material_group'].str.split(', ', expand=True).stack().reset_index(level=1, drop=True).rename('material_grp'))
+sdf = mdf.drop('gl_account', axis=1).join(mdf['gl_account'].str.split(', ', expand=True).stack().reset_index(level=1, drop=True).rename('gl_account'))
 ```
 **Step 7: Parse values in str to int**
 ```python
