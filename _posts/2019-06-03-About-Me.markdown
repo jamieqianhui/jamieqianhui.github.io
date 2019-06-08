@@ -7,14 +7,14 @@ categories: Bio Resume
 **Hello! Welcome to my blog!** This is a space where I document my learnings and share 
  data analytics, technology related information and some real estate knowledge with data enthusiasts! <br> 
  **[Read More][Read-more]**
-
-## About Me (Full-stack Data Analyst)
+<br>
+## About Me 
 
 > Trained in data analytics and real estate, Jamie has delivered scalable data-driven projects with a focus on revenue acquisitions, feasibility studies and business process improvement to real estate consulting firms, government agency and property developer conglomerate. She is experienced in the fields of Data Analytics, Market Research, Real Estate Cash Flow Analysis and is passionate about data stewardship and wealth management. 
 
 You can view my summarised resume on **[Linkedin][linkedin-profile]**.
  
-
+<br>
 
 ## Skills:
 
@@ -27,7 +27,7 @@ You can view my summarised resume on **[Linkedin][linkedin-profile]**.
 + **Other Technologies**: Git, Trello, LucidChart
 + **Industry Knowledge**: Real Estate Cashflow Analysis, Financial Statement Analysis, REITs Analysis
 
-
+<br>
 ## Contact Me
 
 > Feel free to contact me at [jamieqianhui@gmail.com][email-add] for anything related to data analytics and real estate! 
