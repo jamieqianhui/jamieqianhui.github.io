@@ -15,8 +15,8 @@ title:  "About"
 
 <br>
 
-You can view my summarised resume on [Linkedin][Linkedin]
- 
+You can view my summarised resume on [Linkedin][Linkedin] 
+
 <br>
 
 ## Skills
