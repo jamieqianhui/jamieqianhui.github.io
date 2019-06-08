@@ -4,21 +4,20 @@ title:  "About Me"
 date:   2019-06-03 13:24:36 +0800
 categories: Bio Resume
 ---
-**Hello! Welcome to my blog! 😊** This is a space where I document my learnings and share 
- data analytics, technology related information 📊 and some real estate knowledge 🏦 with data enthusiasts! <br> 
+**Hello! Welcome to my blog!** This is a space where I document my learnings and share 
+ data analytics, technology related information and some real estate knowledge with data enthusiasts! <br> 
  **[Read More][Read-more]**
 
-```python
-About Me (Full-stack Data Analyst)
-```
+## About Me (Full-stack Data Analyst)
+
 > Trained in data analytics and real estate, Jamie has delivered scalable data-driven projects with a focus on revenue acquisitions, feasibility studies and business process improvement to real estate consulting firms, government agency and property developer conglomerate. She is experienced in the fields of Data Analytics, Market Research, Real Estate Cash Flow Analysis and is passionate about data stewardship and wealth management. 
 
 You can view my summarised resume on **[Linkedin][linkedin-profile]**.
  
 
-```python
-Skills:
-```
+
+## Skills:
+
 + **Programming Languages**: Python, SQL (MsSQL & Transact-SQL), HTML, R
 + **Database Software**: SQL Server Management Studio (SSMS), SQL Server Integration Service (SSIS), SAP HANA
 + **IDE/Code Editor**: Visual Studio, Sublime Text, Postman (API IDE), R Studio, Jupyter Notebook, Spyder
@@ -28,9 +27,9 @@ Skills:
 + **Other Technologies**: Git, Trello, LucidChart
 + **Industry Knowledge**: Real Estate Cashflow Analysis, Financial Statement Analysis, REITs Analysis
 
-```python
-Contact Me
-```
+
+## Contact Me
+
 > Feel free to contact me at [jamieqianhui@gmail.com][email-add] for anything related to data analytics and real estate! 
 
 [linkedin-profile]: https://linkedin.com/in/jamieluqianhui/
