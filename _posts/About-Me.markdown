@@ -8,7 +8,7 @@ title:  "About Me"
 
 <br>
 <br>
-## About Me 
+## Summary 
 
 > Trained in data analytics and real estate, Jamie has delivered scalable data-driven projects with a focus on revenue acquisitions, feasibility studies and business process improvement to real estate consulting firms, government agency and property developer conglomerate. She is experienced in the fields of Data Analytics and Real Estate Cash Flow Analysis and is passionate about data stewardship and wealth management. 
 
