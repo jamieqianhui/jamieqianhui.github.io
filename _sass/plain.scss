@@ -88,6 +88,13 @@ main {
 			color: #222222;
 			font-weight: normal;
 		}
+		h3 {
+			font-size: 16px;
+			margin-top: 10px;
+			margin-bottom: 0;
+			color: #222222;
+			font-weight: normal;
+		}
 		.tagline {
 			font-size: 22px;
 			margin-top: 17px;
@@ -162,7 +169,7 @@ main {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	color: #222;
-	line-height: 1.9em;
+	line-height: 1.2em;
 	a {
 		color: $linkColor;
 		text-decoration: none;
