@@ -11,7 +11,7 @@ title:  "About"
 <br>
 ## Summary 
 
-> Trained in data analytics and real estate, Jamie has delivered scalable data-driven projects with a focus on revenue acquisitions, feasibility studies and business process improvement to real estate consulting firms, government agency and property developer conglomerate. She is experienced in the fields of Data Analytics, Market Research and Real Estate Cash Flow Analysis. Jamie is passionate about data stewardship and make investments in ETFs/Stocks during her free time. 
+Trained in data analytics and real estate, Jamie has delivered scalable data-driven projects with a focus on revenue acquisitions, feasibility studies and business process improvement to real estate consulting firms, government agency and property developer conglomerate. She is experienced in the fields of Data Analytics, Market Research and Real Estate Cash Flow Analysis. Jamie is passionate about data stewardship and make investments in ETFs/Stocks during her free time. 
 
 
 <br>
@@ -31,7 +31,7 @@ title:  "About"
 
 ## Contact Me
 
-> Feel free to contact me at [jamieqianhui@gmail.com][email-add] for anything related to data analytics and real estate! 
+Feel free to contact me at [jamieqianhui@gmail.com][email-add] for anything related to data analytics and real estate! 
 
 
 [email-add]: jamieqianhui@gmail.com
