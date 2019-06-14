@@ -43,14 +43,15 @@ For indexing purpose, let's create a new unique identifier column and store the 
 mdf['proj_gl_id'] = mdf['project_name'].map(str) +'-'+ mdf['project_id'].map(str) + '-' + mdf['gl_account'].map(str)
 ```
 **Step 6: Split "gl_account" column, expand it, stack it, then join back to the original mdf** <br>
-As there are two GL line items for the same Project in the 1st row of data, we need to first split the `str` by ',' in the  `gl_account` column, then stack the expanded "gl_account" columns into 2 rows.  
+As there are two GL line items for the same Project in the 1st row of data, we need to first split the `str` by ',' in the  `gl_account` column, then stack the expanded `gl_account` columns into 2 rows.  
 ```python
 sdf = mdf.drop('gl_account', axis=1).join(mdf['gl_account'].str.split(', ', expand=True).stack().reset_index(level=1, drop=True).rename('gl_account'))
 ```
 ![DF_stacked]({{ '/assets/DF_stacked.png' | relative_url }}) <br>
-We now have duplicated budget GL line items with budget value at twice the amount of its original value.
+Now, we have 2 duplicated budget GL line items (as highlighted) with budget value at twice the amount of its original value.
 
-**Step 7: Parse values in str to int**
+**Step 7: Parse values in str to int** <br>
+The current dataframe stores the values in `str` format. To do any calculation, we need to convert the values to `int`. 
 ```python
 sdf['monthly_budget'] = pd.to_numeric(sdf['monthly_budget'], errors ='coerce')
 ```
@@ -59,13 +60,10 @@ To get the individual budget amount for each GL line item, we will need to divid
 ```python
 sdf['budget'] = sdf.groupby([sdf.index])['monthly_budget'].apply(lambda x: x / len(x))
 ```
-**Step 9: Drop the 'wide format' monthly budget column**<br>
-Store the updated dataset as `res`
+**Step 9: Drop the concatenated unqiue ID column `proj_gl_id` as it is not required.** <br>
+Store the updated dataset as `res`. Export res to csv, removing the index column.
 ```python
-res = sdf.drop('monthly_budget',axis =1)
-```
-**Step 10: Export res to csv, removing index column**
-```python
+res = sdf.drop('proj_gl_id',axis =1)
 res.to_csv('Budget_2019.csv',index = False)
 ```
 There you go, a clean dataframe in long format!
