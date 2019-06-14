@@ -43,12 +43,13 @@ For indexing purpose, let's create a new unique identifier column and store the 
 mdf['proj_gl_id'] = mdf['project_name'].map(str) +'-'+ mdf['project_id'].map(str) + '-' + mdf['gl_account'].map(str)
 ```
 **Step 6: Split "gl_account" column, expand it, stack it, then join back to the original mdf** <br>
-As there are two GL line items for the same Project in the 1st row of data, we need to split the "gl_account" column and stack the expanded "gl_account" columns into 2 rows.  
-![DF_stacked]({{ '/assets/DF_stacked.png' | relative_url }}) 
-
+As there are two GL line items for the same Project in the 1st row of data, we need to first split the `str` by ',' in the  `gl_account` column, then stack the expanded "gl_account" columns into 2 rows.  
 ```python
 sdf = mdf.drop('gl_account', axis=1).join(mdf['gl_account'].str.split(', ', expand=True).stack().reset_index(level=1, drop=True).rename('gl_account'))
 ```
+![DF_stacked]({{ '/assets/DF_stacked.png' | relative_url }}) <br>
+We now have duplicated budget GL line items with budget value at twice the amount of its original value.
+
 **Step 7: Parse values in str to int**
 ```python
 sdf['monthly_budget'] = pd.to_numeric(sdf['monthly_budget'], errors ='coerce')
