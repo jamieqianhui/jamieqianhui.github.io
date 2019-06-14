@@ -36,14 +36,16 @@ Let's standardise the column names with lower case and replacing all special cha
 mdf.columns = mdf.columns.str.strip().str.lower().str.replace(' ','_').str.replace('/','')
 print(mdf.columns)
 ```
-**Step 5: Create a new ID column by concatenating `Project Name`, `Project I/D` and `G/L Account`**<br>
+**Step 5: Create a new ID column by concatenating `Project Name`, `Project I/D` and `G/L Account`** <br>
 For indexing purpose, let's create a new unique identifier column and store the new ID column as `proj_gl_id`.
 
 ```python
 mdf['proj_gl_id'] = mdf['project_name'].map(str) +'-'+ mdf['project_id'].map(str) + '-' + mdf['gl_account'].map(str)
 ```
-**Step 6: Split "gl_account" column, expand it, stack it, then join back to the original mdf**
-As there are two GL line items for the same Project in row 1, we need to split the "gl_account" column, stack the "dual-gl-account columns" into 2 rows,  
+**Step 6: Split "gl_account" column, expand it, stack it, then join back to the original mdf** <br>
+As there are two GL line items for the same Project in the 1st row of data, we need to split the "gl_account" column and stack the expanded "gl_account" columns into 2 rows.  
+![DF_stacked]({{ '/assets/DF_stacked.png' | relative_url }}) 
+
 ```python
 sdf = mdf.drop('gl_account', axis=1).join(mdf['gl_account'].str.split(', ', expand=True).stack().reset_index(level=1, drop=True).rename('gl_account'))
 ```
@@ -51,7 +53,7 @@ sdf = mdf.drop('gl_account', axis=1).join(mdf['gl_account'].str.split(', ', expa
 ```python
 sdf['monthly_budget'] = pd.to_numeric(sdf['monthly_budget'], errors ='coerce')
 ```
-**Step 8: Divide monthly budget value evenly across duplicated indexes**
+**Step 8: Divide monthly budget value evenly across duplicated indexes** <br>
 To get the individual budget amount for each GL line item, we will need to divide the budget value amount evenly across the duplicated indexes.
 ```python
 sdf['budget'] = sdf.groupby([sdf.index])['monthly_budget'].apply(lambda x: x / len(x))
