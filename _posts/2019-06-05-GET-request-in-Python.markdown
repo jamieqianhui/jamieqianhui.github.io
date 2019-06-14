@@ -63,7 +63,7 @@ print(refperiod)
 ```
 
 **5. Send GET Request to retrieve data based on refPeriod** <br>
-To retrieve a list of median rentals of private non-landed residential properties:
+To retrieve a list of median rentals of private non-landed residential properties, send GET Request to URA API:
 ```python
 api_url_base2= 'https://www.ura.gov.sg/uraDataService/invokeUraDS?service=PMI_Resi_Rental&'
 
