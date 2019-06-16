@@ -66,6 +66,37 @@ Store the updated dataset as `res`. Export res to csv, removing the index column
 res = sdf.drop('proj_gl_id',axis =1)
 res.to_csv('Budget_2019.csv',index = False)
 ```
-There you go, a clean dataframe in long format!
+There you go, a clean dataframe in long format! <br>
+Full python code here: <br>
+```python
+import pandas as pd
+
+# read excel file
+df = pd.read_excel('yourexcelfile.xlsx', sheet_name='Sheet1')
+
+# convert from wide to long format
+mdf = pd.melt (df, id_vars=["Project Name", "Project I/D", "G/L Account"], 
+	  var_name="Period", value_name= "Monthly Budget")
+
+# standardise column names
+mdf.columns = mdf.columns.str.strip().str.lower().str.replace(' ','_').str.replace('/','')
+print(mdf.columns)
+
+# create unique ID
+mdf['proj_gl_id'] = mdf['project_name'].map(str) +'-'+ mdf['project_id'].map(str) + '-' + mdf['gl_account'].map(str)
+
+# split text in column
+sdf = mdf.drop('gl_account', axis=1).join(mdf['gl_account'].str.split(', ', expand=True).stack().reset_index(level=1, drop=True).rename('gl_account'))
+
+# convert text str to numeric
+sdf['monthly_budget'] = pd.to_numeric(sdf['monthly_budget'], errors ='coerce')
+
+# divide values evenly across duplicated indexes
+sdf['budget'] = sdf.groupby([sdf.index])['monthly_budget'].apply(lambda x: x / len(x))
+
+# retrieve your desired dataset
+res = sdf.drop('proj_gl_id',axis =1)
+res.to_csv('Budget_2019.csv',index = False)
+```
 
 [Read More]: https://jamieqianhui.github.io/python/pandas/2019/06/04/Data-Wrangling-in-Python.html
