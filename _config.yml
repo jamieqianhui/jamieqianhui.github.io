@@ -15,6 +15,8 @@ plainwhite:
   name: Jamie Lu Qianhui
   tagline: Data Analyst
   date_format: "%b %-d, %Y"
+  analytics_id: 'UA-142135918-1'
+  sitemap: true
 
   # generate social links in footer
   social_links:
@@ -54,4 +56,3 @@ remote_theme: thelehhman/plainwhite-jekyll
 plugins:
   - jekyll-seo-tag
 #  - jekyll-feed
-
