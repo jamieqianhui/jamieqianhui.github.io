@@ -23,8 +23,8 @@ I am a full-stack data analyst, trained in the fields of data engineering and an
 + **IDE/Code Editor**: Visual Studio, Sublime Text, Postman (API IDE), R Studio, Jupyter Notebook, Spyder
 + **Visualisation Tools**: Tableau, SAS Visual Analytics
 + **Cloud Service**: Microsoft Azure, SAP Cloud Platform
-+ **Workflow Automation**: Microsoft Flow
-+ **Other Technologies**: Git, Trello, LucidChart
++ **Workflow Automation**: Microsoft Flow, UI Path
++ **Other Technologies**: Git, Trello, LucidChart, Google Analytics
 + **Industry Knowledge**: Real Estate Cashflow Analysis, Financial Statement Analysis, REITs Analysis
 
 <br>
