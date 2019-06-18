@@ -8,7 +8,7 @@ Wondering how to build data wrangling pipelines in t-SQL? This post explains on 
 
 
 Let's take the dataframe of your database table (in long format) to be the following:<br>
-![tab_longformat]({{ '/assets/tab_longformat.png' | relative_url }}) 
+![tab_longformat]({{ '/assets/tab_longformat.PNG' | relative_url }}) 
 
 The format of the dataframe are all in `nvarchar`. In order to do any calculation based on date and amount $, we will have to convert the format accordingly. <br>
 
