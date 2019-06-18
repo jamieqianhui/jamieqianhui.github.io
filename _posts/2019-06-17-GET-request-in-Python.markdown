@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Constructing GET Request with Python"
-date:   2019-06-05 09:55:36 +0800
+date:   2019-06-17 09:55:36 +0800
 categories: API Python
 ---
 Creating your **API GET Request** can be hassle-free and easy with **Python**!
