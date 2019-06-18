@@ -9,5 +9,5 @@
 ## 2019 Entries
 + 2019-06-04 Data Wrangling in Python
 + 2019-06-05 Constructing API GET Request in Python
-+ 2019-06-17 Data Wrangling in Transact-SQL
++ 2019-06-17 Data Wrangling in Transact-SQL <br>
 [thelehhman]: https://github.com/thelehhman/plainwhite-jekyll 
