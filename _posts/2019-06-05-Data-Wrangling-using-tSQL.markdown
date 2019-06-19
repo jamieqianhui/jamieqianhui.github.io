@@ -29,7 +29,7 @@ Now, we will be able to order the dataset based on datetime:
  FROM 	dbo.TAB_Rent_LongFormat
  ORDER BY [date_rent_collected]
 ```
-The output will look like this: 
+The output will look like this: <br>
 ![tab_dateformat]({{ '/assets/tab_dateformat.PNG' | relative_url }})  <br>
 
 
