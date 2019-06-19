@@ -30,7 +30,7 @@ Now, we will be able to order the dataset based on datetime:
  ORDER BY [date_rent_collected]
 ```
 The output will look like this: <br>
-![tab_dateformat]({{ '/assets/tab_dateformat.PNG' | relative_url }})
+![tab_dateformat]({{ '/assets/tab_dateformat.png' | relative_url }})
 
 <br>
 Next, if we need to sum up the total rent amount collected for each project, we will have to convert `nvarchar` amount to `decimal`: 
