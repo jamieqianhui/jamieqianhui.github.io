@@ -31,10 +31,9 @@ Now, we will be able to order the dataset based on datetime:
 ```
 The output will look like this: <br>
 ![tab_dateformat]({{ '/assets/tab_dateformat.png' | relative_url }})
-
 <br>
 Next, if we need to sum up the total rent amount collected for each project, we will have to convert `nvarchar` amount to `decimal`: 
-<br>
+<br><br>
 **Step 2: Convert nvarchar for 'Rent Amount' to decimal** <br>
 The special characters $ and ',' will need to be replaced with ''
 ```sql
@@ -63,3 +62,4 @@ The special characters $ and ',' will need to be replaced with ''
 ```
 
 There you go, a clean dataframe in wide format! <br>
+![tab_pivoted]({{ '/assets/tab_pivoted.png' | relative_url }})
