@@ -11,7 +11,7 @@ title:  "About"
 <br>
 ## Summary 
 
-I am a full-stack data analyst, trained in the fields of data engineering and analytics. Beginning in 2016, I have delivered scalable data-driven projects with a focus on revenue acquisitions, feasibility studies and business process improvement to real estate consulting firms, government agency and property developer conglomerate. Apart from data analytics and stewardship, I am passionate about wealth management and make investments in ETFs/Stocks during my free time. 
+As a full-stack data analyst, I am trained in the fields of data engineering and analytics. Beginning in 2016, I have delivered scalable data-driven projects with a focus on revenue acquisitions, feasibility studies and business process improvement to real estate consulting firms, government agency and property developer conglomerate. Apart from data stewardship and data science, I am also passionate about making investments in ETFs/Stocks. Running, hiking and practicing yoga are some of the leisure activities I enjoy during my free time. 
 
 
 <br>
