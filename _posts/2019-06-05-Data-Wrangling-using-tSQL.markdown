@@ -13,19 +13,22 @@ Let's take the dataframe of your database table (in long format) to be the follo
 The format of the dataframe are all in `nvarchar(100)`. In order to do any calculation based on date and amount $, we will have to convert the format accordingly. <br>
 
 **Step 1: Convert nvarchar for 'Date of Rent Collected' column to date format** <br> 
-First, we need to set the data into `YYYY-MM-DD HH:MM:SS` format then parse `nvarchar` to `datetime` format.
+First, we need to set the data into `YYYY-MM-DD HH:MM:SS` format then parse `nvarchar` to `datetime` format. <br>
+Notice that there is a record where the date is indicated as `#`. We will need to convert such missing record to `NULL`. 
 ```sql
- SELECT CONVERT(DATETIME, 
-  			SUBSTRING([Date of Rent Collected], 7, 4) + '-' + SUBSTRING([Date of Rent Collected], 4, 2) + '-' + SUBSTRING([Date of Rent Collected],1, 2) 
+ SELECT 
+ 		CASE WHEN [Date of Rent Collected] = '#' THEN NULL 
+ 		ELSE CONVERT(DATETIME, SUBSTRING([Date of Rent Collected], 7, 4) + '-' + SUBSTRING([Date of Rent Collected], 4, 2) + '-' + SUBSTRING([Date of Rent Collected],1, 2) 
   			+ ' ' + 
   			SUBSTRING([Date of Rent Collected], 12, 2) + ':' + SUBSTRING([Date of Rent Collected], 15, 2) + ':' + SUBSTRING([Date of Rent Collected], 18, 2), 120) 
-  			AS [date_rent_collected]
+  		END	AS [date_rent_collected]
  
  FROM 	dbo.TAB_Rent_LongFormat
 ```
+
 Now, we will be able to order the dataset based on datetime:
 ```sql
- SELECT [date_rent_collected]
+ SELECT [Project], [date_rent_collected], [Rent Type], [Rent Amount], [Currency]
  FROM 	dbo.TAB_Rent_LongFormat
  ORDER BY [date_rent_collected]
 ```
@@ -39,7 +42,7 @@ The special characters $ and ',' will need to be replaced with ''
 ```sql
  SELECT CAST(REPLACE(LEFT(
  						   REPLACE(LEFT([Rent Amount], LEN([Rent Amount]) - 3), ',', ''), '$', '')
-                           AS decimal(18, 2)) AS [Gross Rent]
+                           AS decimal(18, 2)) AS [Rent Amount]
  FROM 	dbo.TAB_Rent_LongFormat
 ```
 
