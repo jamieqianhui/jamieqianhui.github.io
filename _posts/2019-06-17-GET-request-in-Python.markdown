@@ -4,7 +4,7 @@ title:  "Constructing GET Request with Python"
 date:   2019-06-17 09:55:36 +0800
 categories: API Python
 ---
-Creating your **API GET Request** can be hassle-free and easy with **Python**!
+Creating your [REST API][RESTful API] **GET Request** can be hassle-free and easy with **Python**!
 The entire process can be completed by following a **9-step guide**. Click on the blog post title to find out more! You can find the pure .py file stored in my [github repository][here] as well.
 
 
@@ -22,8 +22,9 @@ import json
 import requests
 import pandas as pd
 ```
+These `import` statements load Python code that allow us to work with the data output in JSON format and the HTTP protocol. <br>
 
-**3. Send GET Request to retrieve a daily token** <br>
+**3. Set up the HTTP GET request to retrieve a daily token** <br>
 A valid token needs to be generated to gain access to the data via URA's web API
 
 ```python
@@ -123,3 +124,4 @@ And it's completed! In 80-lines of python code!
 
 
 [here]: https://github.com/jamieqianhui/URA_API_GETrequest
+[RESTful API]: https://restful.io/an-introduction-to-api-s-cee90581ca1b
