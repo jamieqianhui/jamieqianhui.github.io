@@ -9,7 +9,7 @@ Retrieving semi & unstructured data from the webpage to conduct Natural Language
 In this post, I will cover the basics of **web scraping & text processing** using Python. I chose to analyse a text summary of [Chapter XXI in 'The Little Prince'][TLP] novel (as one of my favourite books) for it holds a deep & special meaning, about relationships in life.
 
 
-**Part I: Web Scraping**
+**Part I: Web Scraping** <br>
 First, specify the web page url which you are interested to perform text processing.
 
 The [urllib.request] [urllib] module will help us to crawl the web page, retrieving several elements such as the HTML tags, CSS, JavaScript and the web content.
@@ -53,14 +53,14 @@ for t in text:
 print(output)
 ```
 
-**Part II: Text Processing**
+**Part II: Text Processing** <br>
 The data preprocessing steps for this exercise includes the following: 
 + Tokenization — separating text/string data into units (paragraphs, sentences or words)
 + Text Normalization — converting all letters to lower or upper case, removing unnecessary punctuation, empty strings
 + Removing stop words — frequent words such as ”the”, ”is”, etc. that do not have specific semantic
 + Lemmatization — reduce words with different forms like 'loves', 'loving', 'lovely' to a common base form or root word 'love'.  
 
-**Download Python Natural language toolkit (NLTK) library**
+First, download the Python Natural language toolkit (NLTK) library:
 ```python
 import nltk
 nltk.download()
@@ -100,7 +100,7 @@ lmtzr = WordNetLemmatizer()
 lemm_tokens = [lmtzr.lemmatize(x) for x in filtered_tokens]
 ```
 
-For a sensing on the top 30 words used in the text, we can visualize the lemmatized word tokens in a frequency distribution graph. nltk offers a function FreqDist() to count word frequency:
+For a sensing on the top 30 words used in the text, we can visualize the lemmatized word tokens in a frequency distribution graph. `nltk` offers a function FreqDist() to count word frequency:
 ```python        
 freq = nltk.FreqDist(lemm_tokens)
 for key,val in freq.items():
@@ -110,7 +110,7 @@ freq.plot(30, cumulative=False)
 The output will look like this:
 ![littleprince_freqdist]({{ '/assets/littleprince_freqdist.png' | relative_url }}) 
 
-Another helpful visualization tool would be the `wordcloud` package which helps to create word clouds, with sizes proportional to their frequency in the text.
+Another helpful visualization tool would be the `wordcloud` package which helps to create word clouds with sizes proportional to their frequency in the text.
 
 ```python
 from wordcloud import WordCloud
@@ -122,6 +122,7 @@ plt.show()
 ```
 
 ![littleprince_wc]({{ '/assets/littleprince_wc.png' | relative_url }}) 
+ 
 
 [TLP]: https://www.sparknotes.com/lit/littleprince/section7/
 [urllib]: https://docs.python.org/3/library/urllib.request.html
