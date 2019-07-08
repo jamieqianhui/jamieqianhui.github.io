@@ -12,7 +12,7 @@ In this post, I will cover the basics of **web scraping & text processing** usin
 **Part I: Web Scraping** <br>
 First, specify the web page url which you are interested to perform text processing.
 
-The [urllib.request] [urllib] module will help us to crawl the web page, retrieving several elements such as the HTML tags, CSS, JavaScript and the web content.
+The [urllib.request][urllib] module will help us to crawl the web page, retrieving several elements such as the HTML tags, CSS, JavaScript and the web content.
 
 ```python
 import urllib.request
@@ -21,7 +21,7 @@ html = response.read()
 print(html)
 ```
 
-We will use [Beautiful Soup] [BS] which is a Python library for pulling data out of HTML and XML files. BeautifulSoup provides a simple way to find text content (i.e. non-HTML) from the HTML:
+We will use [Beautiful Soup][BS] which is a Python library for pulling data out of HTML and XML files. BeautifulSoup provides a simple way to find text content (i.e. non-HTML) from the HTML:
 
 ```python
 from bs4 import BeautifulSoup
