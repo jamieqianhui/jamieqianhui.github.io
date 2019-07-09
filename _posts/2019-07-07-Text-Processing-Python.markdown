@@ -2,9 +2,9 @@
 layout: post
 title:  "Basics of Web Scraping & Text Processing in Python"
 date:   2019-07-07 11:47:36 +0800
-categories: WebCrawl Text Python
+categories: WebCrawl TextAnalysis
 ---
-Retrieving semi & unstructured data from the webpage to conduct Natural Language Processing (NLP) is one of the most common tasks in many text/sentiments analysis project. In this post, I will cover the basics of **web scraping & text processing** using Python. I chose to analyse a text summary of [Chapter XXI in 'The Little Prince'][TLP] novel (as one of my favourite books) for it holds a deep & special meaning, about relationships in life.
+Retrieving semi & unstructured data from the webpage to conduct Natural Language Processing (NLP) is one of the most common tasks in many text/sentiments analysis project. In this post, I will cover the basics of **web scraping & text processing** using Python. I chose to analyse a text summary of [Chapter XXI in 'The Little Prince'][TLP] novel (as one of my favourite books) for it holds a deep & special meaning, about relationships in life. Click on the blog post title to find out more!
 
 
 **Part I: Web Scraping** <br>
@@ -63,19 +63,19 @@ First, download the Python Natural language toolkit (NLTK) library:
 import nltk
 nltk.download()
 ```
-This will show the NLTK downloader to choose what packages need to be installed. I downloaded *All Collections* for this exercise. <br>
+This will show the NLTK downloader to choose what packages need to be installed. I downloaded `All Collections` for this exercise. <br>
 Next, we need to convert all the output text to its lowercase because 'Rose' and 'rose' will be read as 2 different words.
 ```python
 # convert output text to lowercase
 output_lower = output.lower()
 ```
-Now we have a list of lowercase text crawled from the web page, let’s convert the output_lower into word tokens. Word tokenizing splits text into individual words and gives structure to previously unstructured text. eg: "to establish ties." as '"','to','establish','ties','.','"'
+Now we have a list of lowercase text crawled from the web page, let’s convert the output_lower into word tokens. Word tokenizing splits text into individual words and gives structure to previously unstructured text. eg: "to establish ties." as '`"`',`'to'`,`'establish'`,`'ties'`,`'.'`,`'"'`
 ```python
 from nltk.tokenize import word_tokenize 
 word_tokens = word_tokenize(output_lower)
 ```
 
-Next, to normalize the tokenized words, we need to remove punctuation and the empty strings `''` from word_tokens:
+Next, to normalize the tokenized words, we need to remove punctuation and the empty strings `''` from `word_tokens`:
 ```python
 from string import punctuation
 word_tokens = [''.join(c for c in s if c not in punctuation) for s in word_tokens]
@@ -89,7 +89,7 @@ stop_words = set(stopwords.words('english'))
 filtered_tokens = [w for w in word_tokens if not w in stop_words]
 ```
 
-**Lemmatisation** — another approach to remove inflection by determining the part of speech and utilizing detailed database of the language. Lemmatization, unlike Stemming, reduces the inflected words properly ensuring that the root word belongs to the language. In Lemmatization root word is called Lemma. A lemma (plural lemmas or lemmata) is the canonical form, dictionary form, or citation form of a set of words.
+**Lemmatization** — another approach to remove inflection by determining the part of speech and utilizing detailed database of the language. Unlike Stemming, lemmatization reduces the inflected words properly ensuring that the root word belongs to the language. For example, the root word of *Lemmatization* is called Lemma. A lemma (plural lemmas or lemmata) is the canonical form, dictionary form, or citation form of a set of words.
 
 ```python
 from nltk.stem import WordNetLemmatizer
@@ -105,7 +105,7 @@ for key,val in freq.items():
     print(str(key) + ':' + str(val))
 freq.plot(30, cumulative=False)
 ```
-The output will look like this:
+The output will look like this: <br>
 ![littleprince_freqdist]({{ '/assets/littleprince_freqdist.png' | relative_url }}) 
 
 Another helpful visualization tool would be the `wordcloud` package which helps to create word clouds with sizes proportional to their frequency in the text.
