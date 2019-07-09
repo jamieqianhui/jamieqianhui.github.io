@@ -23,7 +23,7 @@ layout: default
 	
 <div class="page-navigation">
   {% if page.next.url %}
-    Next Post: <a class="next" style="text-decoration-line: none; text-decoration-color: blue;" href="{{page.next.url | relative_url}}">{{page.next.title}} &rarr;</a><b>
+    Next Post: <a class="next"href="{{page.next.url | relative_url}}">{{page.next.title}} &rarr;</a><br>
   {% endif %}
 	
   {% if page.previous.url %}
