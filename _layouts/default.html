@@ -6,26 +6,22 @@
 	{%- include head.html -%}
 </head>
 <body>
-  <div class="wrapper-masthead">
+   <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src={{ "/assets/portfolio.png" | https://jamieqianhui.github.io }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
           <nav>
             <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
           </nav>
         </header>
       </div>
-    </div>
+    </div>	
 	
 	<main class="container">
 		<section class="about">
+			<a href="https://jamieqianhui.github.io">
+			<img src="{{ "/assets/portfolio.png" | https://jamieqianhui.github.io }}" alt="{{ jamielqh@copyright }}">
+			</a>
 			<a style = "text-decoration:none" href="https://jamieqianhui.github.io"> <h2>{{ site.plainwhite.name }}</h2></a>
 			<a class="tagline">{{ site.plainwhite.tagline }}</a>
 			<p>
@@ -34,7 +30,10 @@
 				<a href="https://linkedin.com/{{ site.plainwhite.social_links.linkedIn }}"><li><i class="icon-linkedin-squared"></i></li></a>
 				<a href="https://twitter.com/{{ site.plainwhite.social_links.twitter }}"><li><i class="icon-twitter-squared"></i></li></a>
 			</ul>
-	
+			<b></b>
+			<a style = "text-decoration:none" href=" https://jamieqianhui.github.io"><h3><b>Blog</b></h3> 
+			<a style = "text-decoration:none" href=" https://jamieqianhui.github.io/about"><h3><b>About</b></h3></a>
+			<p>	
 		</section>
 		<section class="content">
 			{{ content }}
