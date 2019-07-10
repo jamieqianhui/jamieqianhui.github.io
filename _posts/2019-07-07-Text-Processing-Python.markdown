@@ -4,7 +4,7 @@ title:  "Basics of Web Scraping & Text Processing in Python"
 date:   2019-07-07 11:47:36 +0800
 categories: WebCrawl TextAnalysis
 ---
-Retrieving semi & unstructured data from the webpage to conduct Natural Language Processing (NLP) is one of the most common tasks in many text/sentiments analysis project. In this post, I will cover the basics of **web scraping & text processing** using Python. I chose to analyse a text summary of [Chapter XXI in 'The Little Prince'][TLP] novel (as one of my favourite books) for it holds a deep & special meaning, about relationships in life. Click on the blog post title to find out more!
+Retrieving semi & unstructured data from the webpage to conduct Natural Language Processing (NLP) is one of the most common tasks in many text/sentiments analysis project. In this post, I covered the basics of **web scraping, text processing and basic visualisation** using Python. I chose to analyse a text summary of [Chapter XXI in 'The Little Prince'][TLP] novel (as one of my favourite books) for it holds a deep & special meaning about relationships in life. Click on the blog post title to find out more!
 
 
 **Part I: Web Scraping** <br>
@@ -69,20 +69,20 @@ Next, we need to convert all the output text to its lowercase because 'Rose' and
 # convert output text to lowercase
 output_lower = output.lower()
 ```
-Now we have a list of lowercase text crawled from the web page, let’s convert the output_lower into word tokens. Word tokenizing splits text into individual words and gives structure to previously unstructured text. eg: "to establish ties." as '`"`',`'to'`,`'establish'`,`'ties'`,`'.'`,`'"'`
+Now we have a list of lowercase text crawled from the web page, let’s convert the output_lower into word tokens. **Word tokenizing** splits text into individual words and gives structure to previously unstructured text. eg: "to establish ties." as `'"'`,`'to'`,`'establish'`,`'ties'`,`'.'`,`'"'`
 ```python
 from nltk.tokenize import word_tokenize 
 word_tokens = word_tokenize(output_lower)
 ```
 
-Next, to normalize the tokenized words, we need to remove punctuation and the empty strings `''` from `word_tokens`:
+Next, to **normalize the tokenized words**, we need to remove punctuation and the empty strings `''` from `word_tokens`:
 ```python
 from string import punctuation
 word_tokens = [''.join(c for c in s if c not in punctuation) for s in word_tokens]
 # remove empty strings
 word_tokens = [s for s in word_tokens if s]
 ```
-To further cleanup the text corpus, let's remove the "stop words" that often do not carry important meaning. 
+To further cleanup the text corpus, let's **remove the "stop words"** that often do not carry important meaning. 
 ```python
 from nltk.corpus import stopwords
 stop_words = set(stopwords.words('english'))
