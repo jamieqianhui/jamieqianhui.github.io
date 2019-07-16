@@ -4,7 +4,7 @@ title:  "Constructing GET Request with Python"
 date:   2019-06-17 09:55:36 +0800
 categories: API 
 ---
-Creating your **REST API GET Request** can be hassle-free and easy with Python! The entire process can be completed by following a 9-step guide. I constructed a GET request from URA's web AP (with API Key Authentication) to fetch rental contract data in `.json` format and convert them to `.csv`. Click on the blog post title to find out more! You can find the pure .py file stored in my [github repository][gitrepo] as well.
+Creating your **REST API GET Request** can be hassle-free and easy with Python! The entire process can be completed by following a 9-step guide. I constructed a GET request from URA's web AP (with API Key Authentication) to fetch rental contract data in `.json` format and convert them to `.csv`. You can find the pure .py file stored in my [github repository][gitrepo] as well.
 
 **Below is a 9-step guide (80-line code) on how I constructed the GET request in python to fetch data from URA's web API.**
 

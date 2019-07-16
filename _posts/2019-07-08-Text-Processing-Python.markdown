@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Basics of Web Scraping & Text Processing in Python"
-date:   2019-07-07 11:47:36 +0800
+date:   2019-07-08 11:47:36 +0800
 categories: WebCrawl TextAnalysis
 ---
-Retrieving semi & unstructured data from the webpage to conduct Natural Language Processing (NLP) is one of the most common tasks in many text/sentiments analysis project. In this post, I covered the basics of **web scraping, text processing and basic visualisation** using Python. I chose to analyse a text summary of [Chapter XXI in 'The Little Prince'][TLP] novel (as one of my favourite books) for it holds a deep & special meaning about relationships in life. Click on the blog post title to find out more!
+Retrieving semi & unstructured data from the webpage to conduct Natural Language Processing (NLP) is one of the most common tasks in many text/sentiments analysis project. In this post, I covered the basics of **web scraping, text processing and basic visualisation** using Python. I chose to analyse a text summary of [Chapter XXI in 'The Little Prince'][TLP] novel (as one of my favourite books) for it holds a deep & special meaning about relationships in life.
 
 
 **Part I: Web Scraping** <br>

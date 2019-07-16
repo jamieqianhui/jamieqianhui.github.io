@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Data Wrangling with Transact-SQL"
-date:   2019-06-05 13:24:36 +0800
+date:   2019-06-08 13:24:36 +0800
 categories: t-SQL
 ---
-Wondering how to build data wrangling pipelines in t-SQL? This post explains on how to convert `nvarchar` to `date` and `decimal` format, as well as **pivoting** the data from long to wide format. Click on the blog post title to find out more!<br>
+Are you utilising Microsoft SQL Server Management Studio (SSMS) application for data transformation?  Wondering how to build data wrangling pipelines in t-SQL? This post explains on how to convert data in `nvarchar` format to `date` and `decimal` format, as well as **pivoting** the data from long to wide format. <br>
 
 
 Let's take the dataframe of your database table (in long format) to be the following:<br>

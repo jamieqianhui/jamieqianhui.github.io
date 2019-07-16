@@ -4,7 +4,7 @@ title:  "Data Wrangling with Pandas"
 date:   2019-06-04 13:24:36 +0800
 categories: Python Pandas
 ---
-Sharing a few simple tips on data wrangling using `Python Pandas` library! Does having to clean messy excel datasets sound familiar to you? This post explains on how to convert dataframes from wide to long format, standardising column names and dividing column values evenly across duplicated Indexes. Click on the blog post title to find out more!<br>
+Sharing a few simple tips on data wrangling using `Python Pandas` library! Does having to clean messy excel datasets sound familiar to you? This post explains on 1) how to convert dataframes from wide to long format, 2) standardising column names and 3) dividing column values evenly across duplicated Indexes.<br>
 
 
 **Step 1: Import the Pandas libraries** 
