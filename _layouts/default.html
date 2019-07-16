@@ -4,12 +4,24 @@
 	  <link rel="visualanalytics" type="image/png"
             href="{{ "/assets/visualanalytics.png"  | absolute_url }}">
 	{%- include head.html -%}
+	
+	/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+	  var currentScrollPos = window.pageYOffset;
+	  if (prevScrollpos > currentScrollPos) {
+	    document.getElementById("profile_pic").style.display = block;
+	  } else {
+	    document.getElementById("profile_pic").style.display = none;
+	  }
+	  prevScrollpos = currentScrollPos;
+	}
 </head>
 <body>
 	<main class="container">
 		<section class="about">
 			<a href="https://jamieqianhui.github.io">
-			<img src="{{ "/assets/portfolio.png" | https://jamieqianhui.github.io }}" alt="{{ jamielqh@copyright }}">
+			<img id="profile_pic" src="{{ "/assets/portfolio.png" | https://jamieqianhui.github.io }}" alt="{{ jamielqh@copyright }}">
 			</a>
 			<a style = "text-decoration:none" href="https://jamieqianhui.github.io"> <h2>{{ site.plainwhite.name }}</h2></a>
 			<a class="tagline">{{ site.plainwhite.tagline }}</a>
