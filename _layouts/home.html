@@ -22,9 +22,9 @@ layout: default
 {%- if site.posts.size > 0 -%}
 <ul class="posts">
 	{%- for post in site.posts -%}
-	/*<li>
+	<!--<li>
 		<h1 id="posts-label">Posts</h1>
-	</li>*/
+	</li>-->
 	<li>
 		{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 		<a class="post-link" href="{{ post.url | relative_url }}">
