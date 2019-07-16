@@ -4,17 +4,17 @@
 	  <link rel="visualanalytics" type="image/png"
             href="{{ "/assets/visualanalytics.png"  | absolute_url }}">
 	{%- include head.html -%}
+	
+<script src="jquery-3.4.1.min.js"></script>	
 <script>	
-	var prevScrollpos = window.pageYOffset;
-	window.onscroll = function() {
-	  var currentScrollPos = window.pageYOffset;
-	  if (prevScrollpos > currentScrollPos) {
-	    document.getElementById("profile_pic").style.display = "block";
-	  } else {
-	    document.getElementById("profile_pic").style.display = "none";
-	  }
-	  prevScrollpos = currentScrollPos;
-	}
+	$(window).scroll(function() {
+    if ($(this).scrollTop()>300){
+        $('.profile_pic').hide(1000);
+     }
+    else{
+      $('.profile_pic').show(1000);
+     }
+ });
 </script>	
 </head>
 <body>
