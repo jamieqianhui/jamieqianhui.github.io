@@ -4,7 +4,7 @@
 	  <link rel="visualanalytics" type="image/png"
             href="{{ "/assets/visualanalytics.png"  | absolute_url }}">
 	{%- include head.html -%}
-	
+<script>	
 	/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 	var prevScrollpos = window.pageYOffset;
 	window.onscroll = function() {
@@ -16,6 +16,7 @@
 	  }
 	  prevScrollpos = currentScrollPos;
 	}
+</script>	
 </head>
 <body>
 	<main class="container">
