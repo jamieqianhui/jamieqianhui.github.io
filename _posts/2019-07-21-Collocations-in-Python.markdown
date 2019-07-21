@@ -4,7 +4,7 @@ title:  "Text Processing in Python: Collocations"
 date:   2019-07-21 12:47:36 +0800
 categories: Collocations Bigram Trigram
 ---
-Building on my previous post about text processing in python which covered singular word analysis from a text summary, this post explains on how to identify 2-words & 3-words phrases from a webpage. I chose to analyse the text from wikipedia page about the song [Hope][songlink] by The Chainsmokers, one of the most played soundtrack on Spotify which I came across recently.  
+Building on my previous post about text processing in python which covered singular word analysis from a text summary. This post explains on how to identify **2-words & 3-words phrases** from a webpage, specifically filtering the large text corpus into bigrams and trigrams using the collocations package. I chose to analyse the text from wikipedia page about the song ["Hope"][songlink] by The Chainsmokers, one of the most played soundtrack on Spotify which I came across recently.  
 
 
 **Part I: Web Scraping** <br>
@@ -58,7 +58,7 @@ import nltk
 nltk.download()
 ```
 This will show the NLTK downloader to choose what packages need to be installed. I downloaded `All Collections` for this exercise. <br>
-Next, we need to convert all the output text to its lowercase because 'Rose' and 'rose' will be read as 2 different words.
+Next, we need to convert all the output text to its lowercase because 'Hope' and 'hope' will be read as 2 different words.
 ```python
 # convert output text to lowercase
 output_lower = output.lower()
@@ -125,9 +125,8 @@ filtered_bi = bigramFreqTable[bigramFreqTable.bigram.map(lambda x: rightTypes(x)
 The dataframe output of the `filtered_bi` will look like this: <br>
 ![filtered_bi]({{ '/assets/filtered_bi.png' | relative_url }}) 
 
-Now, let's try to filter for trigrams:
-
-```Python
+Now, let's try to filter for trigrams: <br>
+```python
 #function to filter for trigrams
 def rightTypesTri(ngram):
     if '-pron-' in ngram or 't' in ngram:
@@ -150,6 +149,7 @@ filtered_tri = trigramFreqTable[trigramFreqTable.trigram.map(lambda x: rightType
 The dataframe output of the `filtered_tri` will look like this: <br>
 ![filtered_tri]({{ '/assets/filtered_tri.png' | relative_url }}) 
 
+**Conclusion**<br>
 From the results of the filtered bigram and trigram, we can roughly draw a few insights: 
 + The song "Hope" is a collaboration between The Chainsmokers and Winona Oak. 
 + It is a popular dance electronic song which had charted the billboard. 
