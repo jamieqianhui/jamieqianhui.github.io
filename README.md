@@ -12,6 +12,6 @@
 + 2019-06-17 Constructing API GET Request in Python
 + 2019-07-08 Basic Web Scraping & Text Processing in Python
 + 2019-07-21 Text Processing in Python: Collocations
-
++ 2019-07-23 Data Visualisation in Tableau: SG Private Residential Property Sales (1H2019)
 
 [thelehhman]: https://github.com/thelehhman/plainwhite-jekyll 
