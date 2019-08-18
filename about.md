@@ -31,8 +31,9 @@ As a full-stack data analyst, I build Extract, Transform & Load (ETL) pipelines,
 ## Contact Me
 
 Feel free to contact me at [jamieqianhui@gmail.com][email-add] for anything related to data analytics or real estate! 
-
-> *Data is everywhere. It helps us solve problems and better understand the world. But data itself isn't a solution. It's what people do with it that matters. Data science to me is analyzing information to it's truth, is about using data to solve problems and create as much impact as possible for your company. And finally, the real thing is about how do you apply these data insights in decision making.* 
+<br>
+<br>
+> *"Data is everywhere. It helps us solve problems and better understand the world. But data itself isn't a solution. It's what people do with it that matters. Data science to me is analyzing information to it's truth, is about using data to solve problems and create as much impact as possible for your company. And finally, the real thing is about how do you apply these data insights in decision making."* 
 
 [email-add]: jamieqianhui@gmail.com
 [Linkedin]: https://www.linkedin.com/in/jamieluqianhui
