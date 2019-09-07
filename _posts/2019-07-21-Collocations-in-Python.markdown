@@ -8,10 +8,10 @@ Building on my previous post about text processing in python which covered singu
 
 
 {: class="table-of-content"}
+* TOC
+{:toc}
 
-TOC {:toc}
-
-# Part I: Web Scraping
+## Part I: Web Scraping
 First, specify the web page url to perform text processing.
 
 The [urllib.request][urllib] module will help us to crawl the web page, retrieving several elements such as the HTML tags, CSS, JavaScript and the web content.
@@ -81,7 +81,7 @@ word_tokens = [''.join(c for c in s if c not in punctuation) for s in word_token
 word_tokens = [s for s in word_tokens if s]
 ```
 
-### Part III: Collocations
+## Part III: Collocations
 Collocations are expressions consisting of two or more words that correspond to some conventional way of saying things. Collocations include noun phrases like `romantic love` and `weapons of mass destruction`, phrasal verbs like `to make up`, and other stock phrases like `the rich and powerful.`
 
 Collocations are important for a number of applications: natural language generation (to make sure that the output sounds natural and mistakes like `idealized love` or `to take a decision` are avoided), computational lexicography (to automatically identify the important collocations to be listed in a dictionary entry), parsing (so that preference can be given to parses with natural collocations), and corpus linguistic research.
@@ -153,7 +153,7 @@ filtered_tri = trigramFreqTable[trigramFreqTable.trigram.map(lambda x: rightType
 The dataframe output of the `filtered_tri` will look like this: <br>
 ![filtered_tri]({{ '/assets/filtered_tri.png' | relative_url }}) 
 
-#### Conclusion
+## Conclusion
 From the results of the filtered bigram and trigram, we can roughly draw a few insights: 
 + The song "Hope" is a collaboration between The Chainsmokers and Winona Oak. 
 + It is a popular dance electronic song which had charted the billboard. 
