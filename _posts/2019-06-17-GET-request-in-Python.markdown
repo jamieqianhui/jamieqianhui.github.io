@@ -8,13 +8,17 @@ Creating your **REST API GET Request** can be hassle-free and easy with Python! 
 
 **Below is a 9-step guide (80-line code) on how I constructed the GET request in python to fetch data from URA's web API.**
 
-**1. Register an account with URA to obtain your access key** <br>
+{: class="table-of-content"}
+* TOC
+{:toc}
+
+## 1. Register an account with URA to obtain your access key
 Find out more here:
 ```python
 https://www.ura.gov.sg/maps/api/#introduction
 ```
 
-**2.  Import the required libraries** 
+## 2.  Import the required libraries
 ```python
 import json
 import requests
@@ -22,7 +26,7 @@ import pandas as pd
 ```
 These `import` statements load Python code that allow us to work with the data output in JSON format and the HTTP protocol. <br>
 
-**3. Set up the HTTP GET request to retrieve a daily token** <br>
+## 3. Set up the HTTP GET request to retrieve a daily token
 A valid token needs to be generated to gain access to the data via URA's web API
 
 ```python
@@ -50,7 +54,7 @@ else:
 ```
 
 
-**4. Determine the previous month of current period based on Today's date to enter 'refPeriod' Parameter** <br>
+## 4. Determine the value of previous month based on Today's date to indicate the 'refPeriod' Parameter
 The complete dataset of the previous month will only be published by the 15th day of this month. The API requires user to specify the parameter `reference period 'refPeriod'`. We will need to determine what is the previous month in qqYY format of the current period (e.g. 2Q19) based on today's date. If the current period is April (2Q19), then previous month would be March (1Q19) and we need to specify the `refperiod` for March as **1Q19**
 
 ```python
@@ -61,7 +65,7 @@ refperiod = period[-4:]
 print(refperiod)
 ```
 
-**5. Send GET Request to retrieve data based on refPeriod** <br>
+## 5. Send GET Request to retrieve data based on refPeriod
 To retrieve a list of median rentals of private non-landed residential properties, send GET Request to URA API:
 ```python
 api_url_base2= 'https://www.ura.gov.sg/uraDataService/invokeUraDS?service=PMI_Resi_Rental&'
@@ -89,7 +93,7 @@ else:
     print('[!] Request Failed')
 ```
 
-**6. Flatten nested data in json file** <br>
+## 6. Flatten nested data in json file
 The data retrieved from URA's web API is in a nested json format. We will need to flatten the nested data using json_normalize.
 
 ```python
@@ -98,21 +102,21 @@ data = data_info['Result']
 flattendata = json_normalize(data,'rental',['project','street','y','x'],errors='ignore')
 ```
 
-**7.  Determine previous month mmYY from period qqYY** <br>
-We will need to convert previous month (mmYY format) to datetime format. Then extract qqYY format of previous month and store as leaseDate
+## 7.  Determine previous month value in 'mmYY' format then store as string 
+We will need to convert previous month (mmYY format) to datetime format. Then extract mmYY value of previous month and store as leaseDate in string format.
 
 ```python
 previousMMYY = previous_month.to_period('D').strftime('%m%Y')
 leaseDate = previousMMYY[0:2]+previousMMYY[-2:]
 print(leaseDate)
 ```
-**8. Get data for the latest month only from a quarterly-period dataset**
+## 8. Get data for the latest month only from a quarterly-period dataset
 
 ```python
 LatestMonthData = flattendata.loc[flattendata['leaseDate'] == leaseDate]
 print(LatestMonthData)
 ```
-**9. Convert json data to .csv file, removing the index number**
+## 9. Convert json data to .csv file, removing the index number
 
 ```python
 LatestMonthData.to_csv('flatten_data_' + leaseDate +'.csv', index=False)

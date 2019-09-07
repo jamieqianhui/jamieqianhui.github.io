@@ -6,13 +6,16 @@ categories: t-SQL
 ---
 Are you utilising Microsoft SQL Server Management Studio (SSMS) application for data transformation?  Wondering how to build data wrangling pipelines in t-SQL? This post explains on how to convert data in `nvarchar` format to `date` and `decimal` format, as well as **pivoting** the data from long to wide format. <br>
 
+{: class="table-of-content"}
+* TOC
+{:toc}
 
 Let's take the dataframe of your database table (in long format) to be the following:<br>
 ![tab_longformat]({{ '/assets/tab_longformat.PNG' | relative_url }}) 
 
 The format of the dataframe are all in `nvarchar(100)`. In order to do any calculation based on date and amount $, we will have to convert the format accordingly. <br>
 
-**Step 1: Convert nvarchar for 'Date of Rent Collected' column to date format** <br> 
+## Step 1: Convert nvarchar for 'Date of Rent Collected' column to date format
 First, we need to set the data into `YYYY-MM-DD HH:MM:SS` format then parse `nvarchar` to `datetime` format. <br>
 Notice that there is a record where the date is indicated as `#`. We will need to convert such missing record to `NULL`. 
 ```sql
@@ -36,8 +39,9 @@ The output will look like this: <br>
 ![tab_dateformat]({{ '/assets/tab_dateformat.png' | relative_url }})
 <br>
 Next, if we need to sum up the total rent amount collected for each project, we will have to convert `nvarchar` amount to `decimal`: 
-<br><br>
-**Step 2: Convert nvarchar for 'Rent Amount' to decimal** <br>
+<br>
+<br>
+## Step 2: Convert nvarchar for 'Rent Amount' to decimal
 The special characters $ and ',' will need to be replaced with ''
 ```sql
  SELECT CAST(REPLACE(LEFT(
@@ -46,7 +50,7 @@ The special characters $ and ',' will need to be replaced with ''
  FROM 	dbo.TAB_Rent_LongFormat
 ```
 
-**Step 3: Pivot dataset from long to wide format (gather rows into columns)** <br>
+## Step 3: Pivot dataset from long to wide format (gather rows into columns)
 
 ```sql
  SELECT [Project], [date_rent_collected], [Currency],

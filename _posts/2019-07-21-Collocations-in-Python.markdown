@@ -82,9 +82,9 @@ word_tokens = [s for s in word_tokens if s]
 ```
 
 ## Part III: Collocations
-Collocations are expressions consisting of two or more words that correspond to some conventional way of saying things. Collocations include noun phrases like `romantic love` and `weapons of mass destruction`, phrasal verbs like `to make up`, and other stock phrases like `the rich and powerful.`
+Collocations are expressions consisting of two or more words that correspond to some conventional way of saying things. Collocations include noun phrases like *romantic love* and *weapons of mass destruction*, phrasal verbs like *to make up*, and other stock phrases like *the rich and powerful.*
 
-Collocations are important for a number of applications: natural language generation (to make sure that the output sounds natural and mistakes like `idealized love` or `to take a decision` are avoided), computational lexicography (to automatically identify the important collocations to be listed in a dictionary entry), parsing (so that preference can be given to parses with natural collocations), and corpus linguistic research.
+Collocations are important for a number of applications: natural language generation (to make sure that the output sounds natural and mistakes like *idealized love* or *to take a decision* are avoided), computational lexicography (to automatically identify the important collocations to be listed in a dictionary entry), parsing (so that preference can be given to parses with natural collocations), and corpus linguistic research.
 
 Now, let's add the collocations package from the nltk library. The collocations package provides collocation finders which by default consider all ngrams in a text as candidate collocations:
 

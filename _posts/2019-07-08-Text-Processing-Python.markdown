@@ -6,8 +6,11 @@ categories: WebCrawl TextAnalysis
 ---
 Retrieving semi & unstructured data from the webpage to conduct Natural Language Processing (NLP) is one of the most common tasks in many text/sentiments analysis project. In this post, I covered the basics of **web scraping, text processing and basic visualisation** using Python, which includes 1) Web Crawling, 2) Tokenisation, 3) Text Normalisation, 4) Lemmatisation and 5) basic frequency distribution & word cloud visualisation.  I chose to analyse a text summary of [Chapter XXI in 'The Little Prince'][TLP] novel (as one of my favourite books) for it holds a deep & special meaning about relationships in life.
 
+{: class="table-of-content"}
+* TOC
+{:toc}
 
-**Part I: Web Scraping** <br>
+## Part I: Web Scraping
 First, specify the web page url which you are interested to perform text processing.
 
 The [urllib.request][urllib] module will help us to crawl the web page, retrieving several elements such as the HTML tags, CSS, JavaScript and the web content.
@@ -51,7 +54,7 @@ for t in text:
 print(output)
 ```
 
-**Part II: Text Processing** <br>
+## Part II: Text Processing
 The data preprocessing steps for this exercise includes the following: 
 + Tokenization — separating text/string data into units (paragraphs, sentences or words)
 + Text Normalization — converting all letters to lower or upper case, removing unnecessary punctuation, empty strings
@@ -69,12 +72,14 @@ Next, we need to convert all the output text to its lowercase because 'Rose' and
 # convert output text to lowercase
 output_lower = output.lower()
 ```
+
+### Tokenization
 Now we have a list of lowercase text crawled from the web page, let’s convert the output_lower into word tokens. **Word tokenizing** splits text into individual words and gives structure to previously unstructured text. eg: "to establish ties." as `'"'`,`'to'`,`'establish'`,`'ties'`,`'.'`,`'"'`
 ```python
 from nltk.tokenize import word_tokenize 
 word_tokens = word_tokenize(output_lower)
 ```
-
+### Text Normalization
 Next, to **normalize the tokenized words**, we need to remove punctuation and the empty strings `''` from `word_tokens`:
 ```python
 from string import punctuation
@@ -88,7 +93,7 @@ from nltk.corpus import stopwords
 stop_words = set(stopwords.words('english'))
 filtered_tokens = [w for w in word_tokens if not w in stop_words]
 ```
-
+### Lemmatization
 **Lemmatization** — another approach to remove inflection by determining the part of speech and utilizing detailed database of the language. Unlike Stemming, lemmatization reduces the inflected words properly ensuring that the root word belongs to the language. For example, the root word of *Lemmatization* is called Lemma. A lemma (plural lemmas or lemmata) is the canonical form, dictionary form, or citation form of a set of words.
 
 ```python
@@ -107,6 +112,8 @@ freq.plot(30, cumulative=False)
 ```
 The output will look like this: <br>
 ![littleprince_freqdist]({{ '/assets/littleprince_freqdist.png' | relative_url }}) 
+
+### Creation of Word Cloud
 
 Another helpful visualization tool would be the `wordcloud` package which helps to create word clouds with sizes proportional to their frequency in the text.
 
