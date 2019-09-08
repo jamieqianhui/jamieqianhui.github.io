@@ -37,20 +37,20 @@ Some general rules to keep in mind when naming batch files −
 
 ## Commands: SET, ECHO, MOVE
 
-`SET`
+`SET` <br>
 We use the `SET` command to create a new named variable and set its value. We can also use the `SET /A` command if we want to perform arithmetic on a variable.
 
 + **Variables**: SET *variable = value*
 + **Arithmetic**: SET /A *variable = expression* 
 ``` (e.g. SET /A "_number= _number+5")```
 <br> 
-
+<br>
 `ECHO` 
-This batch command displays messages, or turns command echoing on or off
+This batch command displays messages, or turns command echoing on or off. @echo off ensures that our commands are executed instead of being echo-ed back in the command window as messages. 
 <br>
 Syntax <br>
-> ECHO string or 
-> ECHO %variable%
+> **ECHO** string or <br>
+> **ECHO** %variable%
 
 <br> 
 
@@ -86,9 +86,9 @@ C:\Users\ADMIN\AppData\Local\Temp
 This batch command moves files or directories between directories.
 <br>
 Syntax
-```
-move [source] [destination]
-```
+> **move** [source] [destination]
+
+<br>
 
 The following example shows the different variants of the move command.
 ```java
@@ -100,8 +100,24 @@ move Dir1 Dir2
 Rem Moves the file lists.txt to the current directory.
 move C:\lists.txt
 ```
-Output:
+Output: <br>
 All actions are performed as per the remarks in the batch file.
+<br>
+
+Using commands of SET, ECHO, MOVE altogether:
+1. Create the source and destination directory variable using `SET` command.
+2. Display how the files will be moved using the `ECHO` command.
+3. Move the files using the `MOVE` command.
+
+```java
+@ECHO OFF
+SETLOCAL ENABLEDELAYEDEXPANSION
+SET "sourcedir=C:\Users\desktop"
+SET "destdir=C:\Users\documents"
+ECHO MOVE "%sourcedir%\august%.csv" "%destdir%"
+MOVE "%sourcedir%\august%.csv" "%destdir%"
+```
+
 
 [songlink]: https://en.wikipedia.org/wiki/Hope_(The_Chainsmokers_song)
 [urllib]: https://docs.python.org/3/library/urllib.request.html
