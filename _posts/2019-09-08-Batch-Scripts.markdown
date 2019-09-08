@@ -25,11 +25,11 @@ A batch script has a file extension of `.bat`, `.cmd` or `.btm`. Files of this t
 
 ## How to create a batch file in windows?
 
-+ 1. Open a text file, such as a Notepad or WordPad document.
-+ 2. Add your commands, starting with `@echo [off]`, followed by—each in a new line—`title [title of your batch script]`, `echo [first line]`, and `pause`.
-+ 3. Save your file with the file extension `.bat`, for example, test.bat.
-+ 4. To run your batch file, double click the BAT file you just created.
-+ 5. To edit your batch file, right-click the BAT file and select Edit.
+1. Open a text file, such as a Notepad or WordPad document.
+2. Add your commands, starting with `@echo [off]`, followed by—each in a new line—`title [title of your batch script]`, `echo [first line]`, and `pause`.
+3. Save your file with the file extension `.bat`, for example, test.bat.
+4. To run your batch file, double click the BAT file you just created.
+5. To edit your batch file, right-click the BAT file and select Edit.
 
 Some general rules to keep in mind when naming batch files −
 + Try to avoid spaces when naming batch files, it sometime creates issues when they are called from other scripts.
@@ -37,22 +37,23 @@ Some general rules to keep in mind when naming batch files −
 
 ## Commands: SET, ECHO, MOVE
 
-`SET` 
+`SET`
 We use the `SET` command to create a new named variable and set its value. We can also use the `SET /A` command if we want to perform arithmetic on a variable.
 
 + **Variables**: SET *variable = value*
 + **Arithmetic**: SET /A *variable = expression* 
-```
-(e.g. SET /A '_number= _number+5')
-```
+``` (e.g. SET /A "_number= _number+5")```
+<br> 
+
 `ECHO` 
 This batch command displays messages, or turns command echoing on or off
 <br>
-Syntax
-```
-ECHO string or 
-ECHO %variable%
-```
+Syntax <br>
+> ECHO string or 
+> ECHO %variable%
+
+<br> 
+
 ```java
 Rem Turns the echo on so that each command will be shown as executed 
 echo on 
@@ -65,6 +66,7 @@ echo "Hello World"
 Rem Displays the contents of the PATH variable 
 echo %PATH%
 ```
+
 The following output will be displayed in the command prompt:
 ```java
 C:\>Rem Turns the echo on so that each command will be shown as executed
@@ -87,6 +89,7 @@ Syntax
 ```
 move [source] [destination]
 ```
+
 The following example shows the different variants of the move command.
 ```java
 @echo off
