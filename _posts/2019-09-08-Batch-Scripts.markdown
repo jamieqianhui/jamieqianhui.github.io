@@ -43,16 +43,18 @@ We use the `SET` command to create a new named variable and set its value. We ca
 + **Variables**: SET *variable = value*
 + **Arithmetic**: SET /A *variable = expression* 
 ``` (e.g. SET /A "_number= _number+5")```
-<br> 
-<br>
-`ECHO` 
-This batch command displays messages, or turns command echoing on or off. @echo off ensures that our commands are executed instead of being echo-ed back in the command window as messages. 
+<p> </p>
+
+`ECHO` <br>
+This batch command displays messages, or turns command echoing on or off. `@echo off`ensures that our commands are executed instead of being echo-ed back in the command window as messages. 
 <br>
 Syntax <br>
 > **ECHO** string or <br>
 > **ECHO** %variable%
 
-<br> 
+<br>
+<p> 
+Below shows an example of the script written in the .bat file. `Rem` is the remarks function.</p>
 
 ```java
 Rem Turns the echo on so that each command will be shown as executed 
