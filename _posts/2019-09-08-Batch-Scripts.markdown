@@ -4,7 +4,7 @@ title:  "How to create a Batch (.bat) file"
 date:   2019-09-08 18:01:36 +0800
 categories: BatchScripts
 ---
-Sharing and documenting the basic concepts of batch scripting in windows which I've picked up at work. Hopefully this blog post entry can help you learn the basics of batch scripting and create scripts specific for your project requirements to automate tasks which are repetitive in nature.
+Sharing and documenting the basic concepts of batch scripting which I've picked up at work. Hopefully this blog post entry can help you learn the basics of batch scripting and create scripts specific for your project requirements to automate tasks which are repetitive in nature.
 
 
 {: class="table-of-content"}
@@ -34,6 +34,19 @@ A batch script has a file extension of `.bat`, `.cmd` or `.btm`. Files of this t
 Some general rules to keep in mind when naming batch files −
 + Try to avoid spaces when naming batch files, it sometime creates issues when they are called from other scripts.
 + Don’t name them after common batch files which are available in the system such as ping.cmd.
+
+## Where am I? What's in this directory? 
+`pwd` <br> 
+stands for Print Working Directory. It prints the path of the working directory, starting from the root.
+
+`ls` <br>
+list all files and directories in your current directory 
+`ls -l` <br>
+list out all files and directories in long list format
+
+The output in git bash will look like this:<br>
+![CMLoutput]({{ '/assets/command-line-output.png' | relative_url }}) 
+
 
 ## Commands: SET, ECHO, MOVE
 
