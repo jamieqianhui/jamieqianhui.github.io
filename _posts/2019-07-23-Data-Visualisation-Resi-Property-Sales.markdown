@@ -12,6 +12,6 @@ Are you looking to buy a private residential property in Singapore and wish to g
 [Click here to visit my Tableau Public Viz Portfolio][tableau]
 
 
-[tableau]: https://public.tableau.com/profile/jamie.lu2833#!/vizhome/SingaporePrivateResidentialPropertySales1H2019DemandvsSupply/SingaporePrivateResidentialPropertySales1H2019DemandvsSupply
+[tableau]: https://public.tableau.com/profile/jamieluqh#!/
 [link]: https://jamieqianhui.github.io/residential/propertysales/2019/07/23/Data-Visualisation-Resi-Property-Sales.html
 
