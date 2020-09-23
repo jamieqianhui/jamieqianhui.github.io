@@ -11,7 +11,7 @@ show_excerpts: true # set to true to show excerpts on the homepage
 sass:
   sass_dir: _sass
 plainwhite:
-  name: Jamie Lu Qianhui
+  name: Jamie Lu
   tagline: Data Analyst
   date_format: "%b %-d, %Y"
   analytics_id: 'UA-142135918-1'
