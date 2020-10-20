@@ -8,11 +8,6 @@ title:  "About"
 **Hello! Welcome to my blog!** This is a space where I document my learnings, share data analytics concepts and codes, as well as real estate related information with data enthusiasts! 
 <br> 
 <br>
-## Summary 
-
-As a full-stack data analyst, I build Extract, Transform & Load (ETL) pipelines, data automation workflows and analytical dashboards for companies using applications of Microsoft, SAP, Tableau and open-source frameworks. Beginning in 2016, I have delivered scalable data-driven projects with a focus on revenue acquisitions, feasibility studies and business process improvement to real estate developers, consulting firms and government agencies. Apart from data stewardship and data science, I am also passionate about making investments in ETFs/Stocks. Running, hiking and practicing yoga are some of the leisure activities which I enjoy during my free time. 
-
-
 <br>
 
 ## Skills
