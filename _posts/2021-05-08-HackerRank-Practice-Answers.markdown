@@ -11,11 +11,11 @@ Documenting the answers to the practice questions which I have successfully comp
 * TOC
 {:toc}
 
-# **SQL Basic Select** 
+**SQL Basic Select** 
 
-### Weather Observation Station 7
+## Weather Observation Station 7
 
-Query the list of **CITY** names ending with vowels (a, e, i, o, u) from **STATION**. Your result cannot contain duplicates.
+Query the list of **CITY** names ending with vowels `(a, e, i, o, u)` from **STATION**. Your result cannot contain duplicates.
 
 Input Format
 
@@ -32,14 +32,14 @@ The **STATION** table is described as follows:
 where LAT_N is the northern latitude and LONG_W is the western longitude.
 
 **Answer:**
-```SQL
+```sql
 SELECT DISTINCT CITY
 FROM STATION
 WHERE RIGHT(CITY,1) IN ('a','e','i','o','u')
 ```
 
 Alternatively, this answer is acceptable too albeit a less efficient syntax:
-```SQL
+```sql
 SELECT DISTINCT CITY
 FROM STATION
 WHERE RIGHT(CITY,1) = 'a' OR
@@ -49,7 +49,7 @@ RIGHT(CITY,1) = 'o' OR
 RIGHT(CITY,1) = 'u'
 ```
 
-### Weather Observation Station 8
+## Weather Observation Station 8
 
 Query the list of **CITY** names from **STATION** which have vowels (i.e., a, e, i, o, and u) as both their first and last characters. Your result cannot contain duplicates.
 
@@ -59,13 +59,13 @@ The **STATION** table is described as the same as the table above in *Weather Ob
 
 **Answer:**
 
-```SQL
+```sql
 SELECT DISTINCT CITY
 FROM STATION
 WHERE LEFT(CITY,1) IN ('a','e','i','o','u') AND RIGHT(CITY,1) IN ('a','e','i','o','u') 
 ```
 
-### Weather Observation Station 9
+## Weather Observation Station 9
 
 Query the list of **CITY** names from **STATION** that do not start with vowels. Your result cannot contain duplicates.
 
@@ -73,8 +73,23 @@ Input Format
 
 The **STATION** table is described as the same as the table above in *Weather Observation Station 7*.
 
-```SQL
+```sql
 SELECT DISTINCT CITY
 FROM STATION 
 WHERE LEFT(CITY,1) NOT IN ('a','e','i','o','u')
+```
+
+
+## Weather Observation Station 10
+
+Query the list of **CITY** names from **STATION** that do not end with vowels. Your result cannot contain duplicates.
+
+Input Format
+
+The **STATION** table is described as the same as the table above in *Weather Observation Station 7*.
+
+```sql
+SELECT DISTINCT CITY
+FROM STATION 
+WHERE RIGHT(CITY,1) NOT IN ('a','e','i','o','u')
 ```
