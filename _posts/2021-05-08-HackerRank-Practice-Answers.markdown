@@ -22,7 +22,6 @@ Query the list of **CITY** names ending with vowels `(a, e, i, o, u)` from **STA
 Input Format
 
 The **STATION** table is described as follows:
----
 | **Field** | **Type** |
 |:------- |:----------|
  ID  | NUMBER 
@@ -30,7 +29,7 @@ The **STATION** table is described as follows:
  STATE  | VARCHAR2(2)  
  LAT_N  | NUMBER  
  LONG_W | NUMBER  
----
+
 where LAT_N is the northern latitude and LONG_W is the western longitude.
 
 **Answer:**
@@ -149,13 +148,13 @@ Todd
 Joe
 ```
 **Explanation**
+Angela has been an employee for `1` month and earns `$3443`  per month.
+Michael has been an employee for `6` months and earns `$2017` per month.
+Todd has been an employee for `5`  months and earns `$3396` per month.
+Joe has been an employee for `9` months and earns `$3573` per month.
 
-Angela has been an employee for  month and earns  per month.
-Michael has been an employee for  months and earns  per month.
-Todd has been an employee for  months and earns  per month.
-Joe has been an employee for  months and earns  per month.
+We order our output by ascending `employee_id`.
 
-We order our output by ascending employee_id.
 **Answer:**
 ```sql
 SELECT name
