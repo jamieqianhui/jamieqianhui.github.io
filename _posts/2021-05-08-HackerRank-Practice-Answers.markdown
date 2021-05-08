@@ -4,7 +4,7 @@ title:  "Answers to HackerRank Practice Questions on SQL"
 date:   2021-05-08 17:01:36 +0800
 categories: MySQL
 ---
-Documenting the answers to the practice questions which I have successfully completed and passed the code in the compiler on **HackerRank**. If you have not heard of HackerRank, it is a leading technical assessment platform used by hiring companies to conduct online coding tests and interviews aiming to choose the best among coding talents. Check out this blog post for my correct answers to the **`SQL`** Category on Basic Select!
+Documenting the answers to the practice questions which I have successfully completed and passed the code in the compiler on **HackerRank**. If you have not heard of HackerRank, it is a leading technical assessment platform used by hiring companies to conduct online coding tests and interviews aiming to choose the best among coding talents. Check out this blog post for my correct answers to the **`SQL`** Category on Basic and ADVANCED Select!
 
 
 {: class="table-of-content"}
@@ -19,11 +19,9 @@ Documenting the answers to the practice questions which I have successfully comp
 
 Query the list of **CITY** names ending with vowels `(a, e, i, o, u)` from **STATION**. Your result cannot contain duplicates.
 
-Input Format
-
 The **STATION** table is described as follows:
-| **Field** | **Type** |
-|:------- |:----------|
+**Field** | **Type** 
+:------- |:----------
  ID  | NUMBER 
  CITY  | VARCHAR2(21) 
  STATE  | VARCHAR2(2)  
@@ -161,4 +159,55 @@ SELECT name
 FROM EMPLOYEE
 WHERE salary > 2000 and months < 10
 ORDER BY employee_id ASC
+```
+
+# SQL Advanced Select 
+
+## Type of Triangle
+
+Write a query identifying the type of each record in the `TRIANGLES` table using its three side lengths. Output one of the following statements for each record in the table:
+
+-**Equilateral**: It's a triangle with `3` sides of equal length.
+-**Isosceles**: It's a triangle with `2` sides of equal length.
+-**Scalene**: It's a triangle with `3` sides of differing lengths.
+-**Not A Triangle**: The given values of A, B, and C don't form a triangle.
+
+**Answer:**
+```sql
+SELECT 
+  CASE 
+    WHEN A + B <= C OR A + C <= B OR B + C <= A THEN 'Not A Triangle'
+    WHEN A = B AND B = C THEN 'Equilateral'
+    WHEN A = B OR A = C OR B = C THEN 'Isosceles'
+    ELSE 'Scalene'
+  END
+FROM TRIANGLES;
+```
+
+## The PADS 
+
+Generate the following two result sets:
+
+Query an alphabetically ordered list of all names in `OCCUPATIONS`, immediately followed by the first letter of each profession as a parenthetical (i.e.: enclosed in parentheses). For example: `AnActorName(A), ADoctorName(D), AProfessorName(P), and ASingerName(S).`
+Query the number of ocurrences of each occupation in OCCUPATIONS. Sort the occurrences in ascending order, and output them in the following format:
+
+```java
+There are a total of [occupation_count] [occupation]s.
+```
+where [occupation_count] is the number of occurrences of an occupation in `OCCUPATION`S and [occupation] is the **lowercase** occupation name. If more than one Occupation has the same [occupation_count], they should be **ordered alphabetically**.
+
+*Note: There will be at least two entries in the table for each type of occupation.*
+
+**Answer:**
+```sql
+SELECT CONCAT(Name,'(',LEFT(Occupation,1),')')
+FROM OCCUPATIONS
+ORDER BY Name
+;
+
+SELECT CONCAT('There are a total of ', COUNT(Occupation), ' ', LOWER(Occupation), 's.')
+FROM OCCUPATIONS
+GROUP BY Occupation
+ORDER BY COUNT(Occupation) , Occupation ASC
+;
 ```
