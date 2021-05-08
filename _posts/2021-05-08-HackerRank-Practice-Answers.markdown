@@ -20,8 +20,9 @@ Documenting the answers to the practice questions which I have successfully comp
 Query the list of **CITY** names ending with vowels `(a, e, i, o, u)` from **STATION**. Your result cannot contain duplicates.
 
 The **STATION** table is described as follows:
+
 **Field** | **Type** 
-:------- |:----------
+|:------- |:----------|
  ID  | NUMBER 
  CITY  | VARCHAR2(21) 
  STATE  | VARCHAR2(2)  
