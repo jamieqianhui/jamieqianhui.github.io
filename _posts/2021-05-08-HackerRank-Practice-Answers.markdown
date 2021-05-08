@@ -22,7 +22,7 @@ Input Format
 The **STATION** table is described as follows:
 
  **Field** | **Type** 
- ------- | ----------
+ |:------- | ----------:|
  ID  | NUMBER 
  CITY  | VARCHAR2(21) 
  STATE  | VARCHAR2(2)  
@@ -53,8 +53,6 @@ RIGHT(CITY,1) = 'u'
 
 Query the list of **CITY** names from **STATION** which have vowels (i.e., a, e, i, o, and u) as both their first and last characters. Your result cannot contain duplicates.
 
-Input Format
-
 The **STATION** table is described as the same as the table above in *Weather Observation Station 7*.
 
 **Answer:**
@@ -69,10 +67,9 @@ WHERE LEFT(CITY,1) IN ('a','e','i','o','u') AND RIGHT(CITY,1) IN ('a','e','i','o
 
 Query the list of **CITY** names from **STATION** that do not start with vowels. Your result cannot contain duplicates.
 
-Input Format
-
 The **STATION** table is described as the same as the table above in *Weather Observation Station 7*.
 
+**Answer:**
 ```sql
 SELECT DISTINCT CITY
 FROM STATION 
@@ -84,12 +81,22 @@ WHERE LEFT(CITY,1) NOT IN ('a','e','i','o','u')
 
 Query the list of **CITY** names from **STATION** that do not end with vowels. Your result cannot contain duplicates.
 
-Input Format
-
 The **STATION** table is described as the same as the table above in *Weather Observation Station 7*.
 
+**Answer:**
 ```sql
 SELECT DISTINCT CITY
 FROM STATION 
 WHERE RIGHT(CITY,1) NOT IN ('a','e','i','o','u')
+```
+
+## Weather Observation Station 11
+
+Query the list of `CITY` names from **STATION** that either do not start with vowels or do not end with vowels. Your result cannot contain duplicates.
+
+**Answer:**
+```sql
+SELECT DISTINCT CITY
+FROM STATION 
+WHERE LEFT(CITY,1) NOT IN ('a','e','i','o','u') OR RIGHT(CITY,1) NOT IN ('a','e','i','o','u')
 ```
