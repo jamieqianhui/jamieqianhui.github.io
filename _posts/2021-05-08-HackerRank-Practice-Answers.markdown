@@ -11,9 +11,11 @@ Documenting the answers to the practice questions which I have successfully comp
 * TOC
 {:toc}
 
-**SQL Basic Select** 
+# SQL Basic Select 
 
-## Weather Observation Station 7
+## Weather Observation Station
+
+### Weather Observation Station 7
 
 Query the list of **CITY** names ending with vowels `(a, e, i, o, u)` from **STATION**. Your result cannot contain duplicates.
 
@@ -49,7 +51,7 @@ RIGHT(CITY,1) = 'o' OR
 RIGHT(CITY,1) = 'u'
 ```
 
-## Weather Observation Station 8
+### Weather Observation Station 8
 
 Query the list of **CITY** names from **STATION** which have vowels (i.e., a, e, i, o, and u) as both their first and last characters. Your result cannot contain duplicates.
 
@@ -63,7 +65,7 @@ FROM STATION
 WHERE LEFT(CITY,1) IN ('a','e','i','o','u') AND RIGHT(CITY,1) IN ('a','e','i','o','u') 
 ```
 
-## Weather Observation Station 9
+### Weather Observation Station 9
 
 Query the list of **CITY** names from **STATION** that do not start with vowels. Your result cannot contain duplicates.
 
@@ -77,7 +79,7 @@ WHERE LEFT(CITY,1) NOT IN ('a','e','i','o','u')
 ```
 
 
-## Weather Observation Station 10
+### Weather Observation Station 10
 
 Query the list of **CITY** names from **STATION** that do not end with vowels. Your result cannot contain duplicates.
 
@@ -90,7 +92,7 @@ FROM STATION
 WHERE RIGHT(CITY,1) NOT IN ('a','e','i','o','u')
 ```
 
-## Weather Observation Station 11
+### Weather Observation Station 11
 
 Query the list of `CITY` names from **STATION** that either do not start with vowels or do not end with vowels. Your result cannot contain duplicates.
 
@@ -100,14 +102,35 @@ SELECT DISTINCT CITY
 FROM STATION 
 WHERE LEFT(CITY,1) NOT IN ('a','e','i','o','u') OR RIGHT(CITY,1) NOT IN ('a','e','i','o','u')
 ```
-## Weather Observation Station 12
+### Weather Observation Station 12
 
-Query the list of CITY names from STATION that do not start with vowels and do not end with vowels. Your result cannot contain duplicates.
+Query the list of `CITY` names from `STATION` that do not start with vowels and do not end with vowels. Your result cannot contain duplicates.
 
 **Answer:**
 ```sql
-
 SELECT DISTINCT CITY
 FROM STATION 
 WHERE LEFT(CITY,1) NOT IN ('a','e','i','o','u') AND RIGHT(CITY,1) NOT IN ('a','e','i','o','u')
+```
+
+## Higher Than 75 Marks
+Query the Name of any student in `STUDENTS` who scored higher than  Marks. Order your output by the last three characters of each name. If two or more students both have names ending in the same last three characters (i.e.: Bobby, Robby, etc.), secondary sort them by ascending ID.
+
+The `STUDENTS` table is described as follows:  
+
+| **ID** | **Name** | **Marks** |
+|:------- |:--------|:----------|
+ 1  | Ashley | 81
+ 2 | Samantha | 75 
+4 | Julia | 76 
+ 3 | Belvet | 84
+
+The Name column only contains uppercase (A-Z) and lowercase (a-z) letters.
+
+**Answer:**
+```sql
+SELECT Name
+FROM STUDENTS
+WHERE Marks > 75 
+ORDER BY RIGHT(Name, 3), ID ASC
 ```
