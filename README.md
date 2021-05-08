@@ -14,4 +14,7 @@
 + 2019-07-21 Text Processing in Python: Collocations
 + 2019-07-23 Data Visualisation in Tableau: SG Private Residential Property Sales (1H2019)
 
+## 2021 Entries
++ 2021-05-08 Answers to HackerRank Practice Questions on SQL
+
 [thelehhman]: https://github.com/thelehhman/plainwhite-jekyll 
