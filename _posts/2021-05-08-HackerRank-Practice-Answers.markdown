@@ -4,14 +4,14 @@ title:  "Answers to HackerRank Practice Questions on SQL"
 date:   2021-05-08 17:01:36 +0800
 categories: MySQL
 ---
-Documenting the answers to the practice questions which I have successfully completed and passed the code in the compiler on **HackerRank**. If you have not heard of HackerRank, it is a leading technical assessment platform used by hiring companies to conduct online coding tests and interviews aiming to choose the best among coding talents. Check out this blog post for my correct answers to the **`SQL`** Category on Basic and ADVANCED Select!
+Documenting the answers to the practice questions which I have successfully completed and passed the code in the compiler on **HackerRank**. If you have not heard of HackerRank, it is a leading technical assessment platform used by hiring companies to conduct online coding tests and interviews aiming to choose the best among coding talents. Check out this blog post for my correct answers to the **`SQL`** Category on Basic and Advanced Select!
 
 
 {: class="table-of-content"}
 * TOC
 {:toc}
 
-# SQL Basic Select 
+# SQL Basic Select Questions
 
 ## Weather Observation Station
 
@@ -145,7 +145,7 @@ Michael
 Todd
 Joe
 ```
-**Explanation**
+**Explanation**:
 Angela has been an employee for `1` month and earns `$3443`  per month.
 Michael has been an employee for `6` months and earns `$2017` per month.
 Todd has been an employee for `5`  months and earns `$3396` per month.
@@ -161,16 +161,16 @@ WHERE salary > 2000 and months < 10
 ORDER BY employee_id ASC
 ```
 
-# SQL Advanced Select 
+# SQL Advanced Select Questions
 
 ## Type of Triangle
 
 Write a query identifying the type of each record in the `TRIANGLES` table using its three side lengths. Output one of the following statements for each record in the table:
 
--**Equilateral**: It's a triangle with `3` sides of equal length.
--**Isosceles**: It's a triangle with `2` sides of equal length.
--**Scalene**: It's a triangle with `3` sides of differing lengths.
--**Not A Triangle**: The given values of A, B, and C don't form a triangle.
+- **Equilateral**: It's a triangle with `3` sides of equal length.
+- **Isosceles**: It's a triangle with `2` sides of equal length.
+- **Scalene**: It's a triangle with `3` sides of differing lengths.
+- **Not A Triangle**: The given values of A, B, and C don't form a triangle.
 
 **Answer:**
 ```sql
@@ -189,12 +189,12 @@ FROM TRIANGLES;
 Generate the following two result sets:
 
 Query an alphabetically ordered list of all names in `OCCUPATIONS`, immediately followed by the first letter of each profession as a parenthetical (i.e.: enclosed in parentheses). For example: `AnActorName(A), ADoctorName(D), AProfessorName(P), and ASingerName(S).`
-Query the number of ocurrences of each occupation in OCCUPATIONS. Sort the occurrences in ascending order, and output them in the following format:
+Query the number of ocurrences of each occupation in `OCCUPATIONS`. Sort the occurrences in ascending order, and output them in the following format:
 
 ```java
 There are a total of [occupation_count] [occupation]s.
 ```
-where [occupation_count] is the number of occurrences of an occupation in `OCCUPATION`S and [occupation] is the **lowercase** occupation name. If more than one Occupation has the same [occupation_count], they should be **ordered alphabetically**.
+where [occupation_count] is the number of occurrences of an occupation in `OCCUPATIONS` and [occupation] is the **lowercase** occupation name. If more than one Occupation has the same [occupation_count], they should be **ordered alphabetically**.
 
 *Note: There will be at least two entries in the table for each type of occupation.*
 
@@ -202,7 +202,7 @@ where [occupation_count] is the number of occurrences of an occupation in `OCCUP
 ```sql
 SELECT CONCAT(Name,'(',LEFT(Occupation,1),')')
 FROM OCCUPATIONS
-ORDER BY Name
+ORDER BY Name ASC
 ;
 
 SELECT CONCAT('There are a total of ', COUNT(Occupation), ' ', LOWER(Occupation), 's.')
