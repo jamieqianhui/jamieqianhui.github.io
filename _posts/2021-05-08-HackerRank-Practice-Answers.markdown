@@ -4,7 +4,7 @@ title:  "Answers to HackerRank Practice Questions on SQL"
 date:   2021-05-08 17:01:36 +0800
 categories: MySQL
 ---
-Documenting the answers to the practice questions which I have successfully completed on **HackerRank**. If you have not heard of HackerRank, it is a leading technical assessment platform used by hiring companies to conduct online coding Tests and interviews aiming to choose the best among coding talents. Check out this blog post for the answers to the **`SQL`** Category on Basic Select!
+Documenting the answers to the practice questions which I have successfully completed and passed the code in the compiler on **HackerRank**. If you have not heard of HackerRank, it is a leading technical assessment platform used by hiring companies to conduct online coding tests and interviews aiming to choose the best among coding talents. Check out this blog post for my correct answers to the **`SQL`** Category on Basic Select!
 
 
 {: class="table-of-content"}
@@ -21,8 +21,8 @@ Input Format
 
 The **STATION** table is described as follows:
 
- **Field** | **Type** 
- |:------- | ----------:|
+| **Field** | **Type** |
+|:------- |:----------|
  ID  | NUMBER 
  CITY  | VARCHAR2(21) 
  STATE  | VARCHAR2(2)  
@@ -99,4 +99,15 @@ Query the list of `CITY` names from **STATION** that either do not start with vo
 SELECT DISTINCT CITY
 FROM STATION 
 WHERE LEFT(CITY,1) NOT IN ('a','e','i','o','u') OR RIGHT(CITY,1) NOT IN ('a','e','i','o','u')
+```
+## Weather Observation Station 12
+
+Query the list of CITY names from STATION that do not start with vowels and do not end with vowels. Your result cannot contain duplicates.
+
+**Answer:**
+```sql
+
+SELECT DISTINCT CITY
+FROM STATION 
+WHERE LEFT(CITY,1) NOT IN ('a','e','i','o','u') AND RIGHT(CITY,1) NOT IN ('a','e','i','o','u')
 ```
