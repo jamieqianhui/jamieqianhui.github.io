@@ -2,17 +2,17 @@
 layout: post
 title:  "Solutions to HackerRank Coding Challenges in Python"
 date:   2021-05-09 16:41:36 +0800
-categories: Python
+categories: Python 3
 ---
 
-One of the best ways to absorb and retain more of the new concepts that I have learnt about coding in `Python` is through documentation! As part of my journey to future-proof my data career by being more proficient in the python language and also to prepare for potential technical assessments/ interviews, I have been spending my free time solving coding challenges on [HackerRank][hackerrank]. 
-In this blog post, I will share the solutions to some of the practice challenges which I have completed and successfully passed the code in the compiler on **HackerRank**. Do click on *Read More* or the title of this blog post for the solutions which I've created in Python.
+One of the best ways to absorb and retain more of the new concepts that I have learnt about coding in `Python` is through documentation! As part of my journey to future-proof my data career by levelling up my proficiency in the python language and also to prepare for potential technical interviews, I have been spending my free time solving coding challenges on [HackerRank][hackerrank]. 
+In this blog post, I will share the solutions to some of the practice challenges which I have completed and successfully passed the code in the compiler on **HackerRank**. Do click on *Read More* or the title of this blog post for the Python 3 solutions created by me.
 
 {: class="table-of-content"}
 * TOC
 {:toc}
 
-# Python Introduction Questions
+# Python Introduction (Easy) Questions
 
 ## If-Else
 
@@ -25,14 +25,12 @@ Given an integer, `n` , perform the following conditional actions:
 - If `n` is even and in the inclusive range of `6` to `20`, print Weird
 - If `n` is even and greater than `20`, print Not Weird
 
-*Input Format:*
-A single line containing a positive integer, `n`.
+*Input Format:* A single line containing a positive integer, `n`.
 
 Constraints:
 - `1 <= n <= 100 `
 
-*Output Format:*
-Print `Weird` if the number is weird. Otherwise, print `Not Weird`.
+*Output Format:* Print `Weird` if the number is weird. Otherwise, print `Not Weird`.
 
 
 **Solution:**
@@ -76,6 +74,7 @@ The provided code stub reads two integers from STDIN, `a` and `b` . Add code to 
 Example:
 
 `a = 3`
+
 `b = 5`
 
 Print the following:
@@ -84,13 +83,9 @@ Print the following:
 -2
 15
 ```
-*Input Format:*
-The first line contains the first integer, `a` .
-The second line contains the second integer, `b`.
+*Input Format:* The first line contains the first integer, `a`. The second line contains the second integer, `b`.
 
-
-*Output Format:*
-Print the three lines as explained above.
+*Output Format:* Print the three lines as explained above.
 
 Sample Input 0
 ```java
@@ -123,9 +118,10 @@ The provided code stub reads two integers from STDIN, `a` and `b` . Add logic to
 
 No rounding or formatting is necessary.
 
-Example
+Example:
 
 `a = 3`
+
 `b = 5 `
 
 - The result of the integer division `3//5 = 0`.
@@ -164,9 +160,9 @@ The provided code stub reads and integer,`n`, from STDIN. For all non-negative i
 
 Example
 
-`n=3`
+`n = 3`
 
-The list of non-negative integers that are less than `n=3` is `[0,1,2]` . Print the square of each number on a separate line.
+The list of non-negative integers that are less than `n = 3` is `[0,1,2]` . Print the square of each number on a separate line.
 ```java
 0
 1
