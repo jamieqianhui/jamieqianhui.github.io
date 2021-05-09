@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Answers to HackerRank Practice Questions on Python"
+title:  "Solutions to HackerRank Coding Challenges in Python"
 date:   2021-05-09 16:41:36 +0800
 categories: Python
 ---
@@ -14,27 +14,27 @@ In this blog post, I will share the answers to some of the practice questions wh
 
 # Python Introduction Questions
 
-## Python If-Else
+## If-Else
 
 **Task**
 Given an integer, , perform the following conditional actions:
 
-If `n` is odd, print Weird
-If `n` is even and in the inclusive range of `2` to `5`, print Not Weird
-If `n` is even and in the inclusive range of `6` to `20`, print Weird
-If `n` is even and greater than `20`, print Not Weird
+- If `n` is odd, print Weird
+- If `n` is even and in the inclusive range of `2` to `5`, print Not Weird
+- If `n` is even and in the inclusive range of `6` to `20`, print Weird
+- If `n` is even and greater than `20`, print Not Weird
 
-Input Format
+Input Format:
 A single line containing a positive integer, `n`.
 
-Constraints
+Constraints:
 - `1 <= n <= 100 `
 
-Output Format
+Output Format:
 Print `Weird` if the number is weird. Otherwise, print `Not Weird`.
 
 
-**Answer:**
+**Solution:**
 ```python
 #!/bin/python3
 
@@ -60,4 +60,57 @@ if __name__ == '__main__':
         elif(n>20):
             print("Not Weird")
     
+```
+
+## Arithmetic Operators
+
+**Task**
+The provided code stub reads two integers from STDIN,  and . Add code to print three lines where:
+
+1. The first line contains the sum of the two numbers.
+2. The second line contains the difference of the two numbers (first - second).
+3. The third line contains the product of the two numbers.
+
+Example:
+
+`a = 3
+b = 5`
+
+Print the following:
+```java
+8
+-2
+15
+```
+Input Format:
+
+The first line contains the first integer, `a` .
+The second line contains the second integer, `b`.
+
+
+Output Format:
+
+Print the three lines as explained above.
+
+Sample Input 0
+```java
+3
+2
+```
+Sample Output 0
+```java
+5
+1
+6
+```
+
+**Solution:**
+```python
+if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+    
+    print(a + b)
+    print(a - b)
+    print(a * b)
 ```
