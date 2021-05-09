@@ -6,7 +6,7 @@ categories: Python
 ---
 
 One of the best ways to absorb and retain more of the new concepts and information that I have learnt about coding in `Python` is through documentation! As part of my journey to future-proof my data career by being more proficient in the python language and also to prepare for potential technical assessments/ interviews, I have been spending my free time solving coding challenges on HackerRank. 
-In this blog post, I will share the answers to some of the practice questions which I have completed and successfully passed the code in the compiler on **HackerRank**. Do click on "Read More" or the title of this blog post for the solutions which I've created in `python`
+In this blog post, I will share the answers to some of the practice questions which I have completed and successfully passed the code in the compiler on **HackerRank**. Do click on "Read More" or the title of this blog post for the solutions which I've created in `Python`.
 
 {: class="table-of-content"}
 * TOC
@@ -17,7 +17,7 @@ In this blog post, I will share the answers to some of the practice questions wh
 ## If-Else
 
 **Task**
-Given an integer, , perform the following conditional actions:
+Given an integer, `n` , perform the following conditional actions:
 
 - If `n` is odd, print Weird
 - If `n` is even and in the inclusive range of `2` to `5`, print Not Weird
@@ -65,7 +65,8 @@ if __name__ == '__main__':
 ## Arithmetic Operators
 
 **Task**
-The provided code stub reads two integers from STDIN,  and . Add code to print three lines where:
+
+The provided code stub reads two integers from STDIN, `a` and `b` . Add code to print three lines where:
 
 1. The first line contains the sum of the two numbers.
 2. The second line contains the difference of the two numbers (first - second).
@@ -113,4 +114,45 @@ if __name__ == '__main__':
     print(a + b)
     print(a - b)
     print(a * b)
+```
+
+## Division
+
+**Task**
+
+The provided code stub reads two integers from STDIN, `a` and `b` . Add logic to print two lines. The first line should contain the result of integer division, `a`//`b` . The second line should contain the result of float division,  `a`/`b` .
+
+No rounding or formatting is necessary.
+
+**Example**
+
+`a = 3
+b = 5 `
+
+- The result of the integer division `3//5 = 0`.
+- The result of the float division is `3/5 = 0.6`.
+
+Print:
+```java
+0
+0.6
+```
+
+**Input Format**
+
+The first line contains the first integer, `a` .
+The second line contains the second integer, `b` .
+
+**Output Format**
+
+Print the two lines as described above.
+
+**Solution:**
+```python
+if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+    
+    print(a//b)
+    print(a/b)
 ```
