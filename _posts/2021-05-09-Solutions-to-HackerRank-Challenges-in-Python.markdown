@@ -5,8 +5,8 @@ date:   2021-05-09 16:41:36 +0800
 categories: Python
 ---
 
-One of the best ways to absorb and retain more of the new concepts and information that I have learnt about coding in `Python` is through documentation! As part of my journey to future-proof my data career by being more proficient in the python language and also to prepare for potential technical assessments/ interviews, I have been spending my free time solving coding challenges on HackerRank. 
-In this blog post, I will share the answers to some of the practice questions which I have completed and successfully passed the code in the compiler on **HackerRank**. Do click on "Read More" or the title of this blog post for the solutions which I've created in `Python`.
+One of the best ways to absorb and retain more of the new concepts that I have learnt about coding in `Python` is through documentation! As part of my journey to future-proof my data career by being more proficient in the python language and also to prepare for potential technical assessments/ interviews, I have been spending my free time solving coding challenges on [HackerRank][hackerrank]. 
+In this blog post, I will share the solutions to some of the practice challenges which I have completed and successfully passed the code in the compiler on **HackerRank**. Do click on *Read More* or the title of this blog post for the solutions which I've created in Python.
 
 {: class="table-of-content"}
 * TOC
@@ -17,6 +17,7 @@ In this blog post, I will share the answers to some of the practice questions wh
 ## If-Else
 
 **Task**
+
 Given an integer, `n` , perform the following conditional actions:
 
 - If `n` is odd, print Weird
@@ -24,13 +25,13 @@ Given an integer, `n` , perform the following conditional actions:
 - If `n` is even and in the inclusive range of `6` to `20`, print Weird
 - If `n` is even and greater than `20`, print Not Weird
 
-Input Format:
+*Input Format:*
 A single line containing a positive integer, `n`.
 
 Constraints:
 - `1 <= n <= 100 `
 
-Output Format:
+*Output Format:*
 Print `Weird` if the number is weird. Otherwise, print `Not Weird`.
 
 
@@ -74,8 +75,8 @@ The provided code stub reads two integers from STDIN, `a` and `b` . Add code to 
 
 Example:
 
-`a = 3
-b = 5`
+`a = 3`
+`b = 5`
 
 Print the following:
 ```java
@@ -83,14 +84,12 @@ Print the following:
 -2
 15
 ```
-Input Format:
-
+*Input Format:*
 The first line contains the first integer, `a` .
 The second line contains the second integer, `b`.
 
 
-Output Format:
-
+*Output Format:*
 Print the three lines as explained above.
 
 Sample Input 0
@@ -120,14 +119,14 @@ if __name__ == '__main__':
 
 **Task**
 
-The provided code stub reads two integers from STDIN, `a` and `b` . Add logic to print two lines. The first line should contain the result of integer division, `a`//`b` . The second line should contain the result of float division,  `a`/`b` .
+The provided code stub reads two integers from STDIN, `a` and `b` . Add logic to print two lines. The first line should contain the result of integer division, `a//b` . The second line should contain the result of float division,  `a/b` .
 
 No rounding or formatting is necessary.
 
-**Example**
+Example
 
-`a = 3
-b = 5 `
+`a = 3`
+`b = 5 `
 
 - The result of the integer division `3//5 = 0`.
 - The result of the float division is `3/5 = 0.6`.
@@ -156,3 +155,49 @@ if __name__ == '__main__':
     print(a//b)
     print(a/b)
 ```
+
+## Loops
+
+**Task**
+
+The provided code stub reads and integer,`n`, from STDIN. For all non-negative integers `i < n` , print `i**2`.
+
+Example
+
+`n=3`
+
+The list of non-negative integers that are less than `n=3` is `[0,1,2]` . Print the square of each number on a separate line.
+```java
+0
+1
+4
+```
+*Input Format:* The first and only line contains the integer, `n`.
+
+*Constraints:* `1 <= n <= 20`
+
+*Output Format:* Print `n` lines, one corresponding to each `i`.
+
+Sample Input 0
+```java
+5
+```
+Sample Output 0
+```java
+0
+1
+4
+9
+16
+```
+
+**Solution:**
+```python
+if __name__ == '__main__':
+    n = int(input())
+
+for i in range(n):
+    print (i ** 2)
+```
+
+[hackerrank]: https://www.hackerrank.com/dashboard
