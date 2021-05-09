@@ -16,8 +16,8 @@ plainwhite:
   date_format: "%b %-d, %Y"
   analytics_id: 'UA-142135918-1'
   sitemap: true
-  dark_mode: true
-  search: true
+  # dark_mode: true
+  # search: true
 
   # generate social links in footer
   social_links:
