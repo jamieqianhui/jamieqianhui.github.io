@@ -12,13 +12,13 @@ title:  "About"
 
 ## Skills
 
-+ **Programming Languages**: Python, SQL, Transact-SQL(T-SQL), R, HTML, CSS
++ **Programming Languages**: Python, SQL, Transact-SQL(T-SQL), BatchScript, JavaScript, R, HTML, CSS
 + **Database Application**: SQL Server Management Studio (SSMS), SQL Server Integration Service (SSIS), SAP HANA
 + **IDE/Code Editor**: Visual Studio, Sublime Text, Postman, R Studio, Jupyter Notebook, Spyder
-+ **Visualisation Tools**: Tableau, SAS Visual Analytics
++ **Visualisation Tools**: Tableau, SAS Visual Analytics, PowerPoint, Keynote
 + **Cloud Service**: Microsoft Azure, SAP Cloud Platform
 + **Workflow Automation**: Microsoft Flow, UiPath
-+ **Other Technologies**: Git, Trello, Google Analytics
++ **Other Technologies**: Git, Trello, Asana, Google Analytics
 + **Industry Knowledge**: Real Estate Cashflow Analysis, Financial Statement Analysis, REITs Analysis
 
 <br>
