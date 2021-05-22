@@ -16,5 +16,6 @@
 
 ## 2021 Entries
 + 2021-05-08 Answers to HackerRank Practice Questions on SQL
++ 2021-05-09 Solutions to HackerRank Coding Challenges in Python
 
 [thelehhman]: https://github.com/thelehhman/plainwhite-jekyll 
