@@ -4,8 +4,8 @@ title:  "About"
 
 ---
 
-## About 
-**Hello! Welcome to my blog!** This is a space where I document my learnings, share data analytics concepts and codes, as well as real estate related information with data enthusiasts! 
+## About
+**Hello! Welcome to my blog!** This is a space where I document my learnings, share data analytics concepts and codes, as well as concepts related to automation and visualizations with data enthusiasts! 
 <br> 
 <br>
 <br>
@@ -20,16 +20,15 @@ title:  "About"
 + **Workflow Automation**: Microsoft Flow, UiPath
 + **Other Technologies**: Git, Trello, Asana, Google Analytics
 + **Industry Knowledge**: Real Estate Cashflow Analysis, Financial Statement Analysis, REITs Analysis
++ **Language**: English (Native), Chinese (Native), French (Elementary)
 
 <br>
 
 ## Contact Me
-
-Feel free to contact me at [jamieqianhui@gmail.com][email-add] for anything related to data analytics or real estate! 
+I enjoy working on new challenges, learning new skills (currently learning about machine learning and basic French) as well as making new friends, so feel free to reach out to me via [LinkedIn][Linkedin] or email me at jamieqianhui@gmail.com ! 
 <br>
 <br>
 
 
-[email-add]: jamieqianhui@gmail.com
 [Linkedin]: https://www.linkedin.com/in/jamieluqianhui
 
