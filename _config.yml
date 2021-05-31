@@ -12,7 +12,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Jamie Lu
-  tagline: Data Analyst
+  tagline: Data Analyst. Designer
   date_format: "%b %-d, %Y"
   analytics_id: 'UA-142135918-1'
   sitemap: true
@@ -24,6 +24,7 @@ plainwhite:
     twitter: jamieprairie
     github:  jamieqianhui
     linkedIn: in/jamieluqh
+    email: jekyll
     # rss: rss
     # dribbble: jekyll
     # facebook: jekyll
