@@ -25,10 +25,11 @@ title:  "About"
 <br>
 
 ## Contact Me
-I enjoy working on new challenges, learning new skills (currently learning about machine learning and basic French) as well as making new friends, so feel free to reach out to me via [LinkedIn][Linkedin] or email me at jamieqianhui@gmail.com ! 
+I enjoy working on new challenges, learning new skills (currently learning about machine learning and basic French) as well as designing engaging and effective visualizations, so feel free to reach out to me via **[LinkedIn]**[Linkedin] or email me at jamieqianhui@gmail.com for anything related to data analytics! 
+
 <br>
 <br>
 
 
-[Linkedin]: https://www.linkedin.com/in/jamieluqianhui
+[Linkedin]: https://www.linkedin.com/in/jamieluqh
 
