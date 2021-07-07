@@ -5,7 +5,7 @@ date:   2021-05-09 16:41:36 +0800
 categories: Python3
 ---
 
-One of the best ways to absorb and retain more of the new concepts that I have learnt about coding in `Python` is through documentation! As part of my journey to future-proof my data career by levelling up my proficiency in the python language and also to prepare for potential technical interviews, I have been spending my free time solving coding challenges on [HackerRank][hackerrank]. 
+One of the best ways to absorb and retain more of the new concepts that I have learnt about coding in `Python` is through documentation! As part of my journey to future-proof my data career and also to improve my proficiency in the python language, I have been spending my free time solving coding challenges on [HackerRank][hackerrank]. 
 In this blog post, I will share the solutions to some of the practice challenges which I have completed and successfully passed the code in the compiler on **HackerRank**. Do click on *Read More* or the title of this blog post for the Python 3 solutions created by me.
 
 {: class="table-of-content"}
