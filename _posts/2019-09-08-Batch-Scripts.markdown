@@ -4,7 +4,7 @@ title:  "How to create a Batch (.bat) file"
 date:   2019-09-08 18:01:36 +0800
 categories: BatchScripts
 ---
-Sharing and documenting the basic concepts of batch scripting which I've picked up at work. Hopefully this blog post entry can help you learn the basics of batch scripting and create scripts specific for your project requirements to automate tasks which are repetitive in nature.
+Sharing and documenting the basic concepts of batch scripting which I've picked up at work. Hopefully this blog post entry can help you to learn the basics of batch scripting and create scripts to automate tasks which are repetitive in nature.
 
 
 {: class="table-of-content"}
