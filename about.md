@@ -6,18 +6,17 @@ title:  "About"
 
 ## About
 **Hello! Welcome to my blog!** This is a space where I document my learnings, share data analytics concepts and codes, as well as concepts related to automation and visualizations with data enthusiasts! 
-<br> Aside from my full-time job, I am concurrently pursuing a part-time master of science degree at Georgia Institute of Technology, majoring in Analytics. My schedule has now been (enjoyably) more busy managing and balanacing a full-time job, a part-time master degree and my personal life all together! Tbh, it can be hectic but still manageable and fulfilling ;)  
+<br><br> 
+Aside from my full-time job, I am concurrently pursuing a part-time master of science degree at Georgia Institute of Technology, majoring in **[Analytics][Analytics]**. My schedule has now been (enjoyably) more busy managing and balanacing a full-time job, a part-time master degree and my personal life all together! Tbh, it can be hectic but still manageable and fulfilling ;)  
 
 <br>
-<br>
-
 
 ## Skills
 
 + **Programming Languages**: Python, SQL, Transact-SQL(T-SQL), BatchScript, JavaScript, R, HTML, CSS
-+ **Visualisation Tools**:   Tableau, Google Analytics, PowerPoint, Keynote
-+ **Database Application**:  SQL Server Management Studio (SSMS), SQL Server Integration Service (SSIS), SAP HANA
-+ **Cloud Service**:         Microsoft Azure, SAP Cloud Platform
++ **Data Visualisation Tools**: Tableau, Google Analytics, PowerPoint, Keynote
++ **Database Applications**:  SQL Server Management Studio (SSMS), SQL Server Integration Service (SSIS), SAP HANA
++ **Cloud Platform Services**: Microsoft Azure, SAP Cloud Platform
 + **IDE/Code Compiler**:     Visual Studio, R Studio, Jupyter Notebook, Spyder
 + **Automation/API**:        Microsoft Power Automate, Postman
 + **Other Technologies**:    Git, Trello, Asana, Notion 
@@ -34,4 +33,5 @@ I enjoy working on new challenges, learning new skills (currently learning basic
 
 
 [Linkedin]: https://www.linkedin.com/in/jamieluqh
+[Analytics]: https://pe.gatech.edu/degrees/analytics/curriculum
 
