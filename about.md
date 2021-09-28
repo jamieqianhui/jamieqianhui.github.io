@@ -5,7 +5,7 @@ title:  "About"
 ---
 
 ## About
-**Hello! Welcome to my blog!** This is a space where I document my learnings, share data analytics concepts and codes, as well as concepts related to automation and visualizations with data enthusiasts! 
+**Hello! Welcome to my blog!** This is a space where I document my learnings, share data analytics codes and concepts related to automation and visualizations with data enthusiasts! 
 <br><br> 
 Aside from my full-time job, I am concurrently pursuing a part-time master of science degree at Georgia Institute of Technology, majoring in **[Analytics][Analytics]**. My schedule has now been (enjoyably) more busy managing and balancing a full-time job, a part-time master degree and my personal life all together! Tbh, it can be hectic but still manageable and fulfilling ;)  
 
@@ -26,7 +26,7 @@ Aside from my full-time job, I am concurrently pursuing a part-time master of sc
 <br>
 
 ## Contact Me
-I enjoy working on new challenges, learning new skills (currently learning basic French during my additional pockets of free time) as well as designing engaging and effective visualizations, so feel free to reach out to me via **[LinkedIn][Linkedin]** or email me at jamieqianhui@gmail.com for anything related to data analytics! 
+I enjoy working on new challenges, learning new skills (currently learning basic French during my additional pockets of free time) as well as designing engaging and effective visualizations, so feel free to reach out to me via **[LinkedIn][Linkedin]** for anything related to data analytics! 
 
 <br>
 <br>
