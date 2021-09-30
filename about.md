@@ -15,7 +15,7 @@ Aside from my full-time job, I am concurrently pursuing a part-time master of sc
 
 + **Programming Languages**: Python, SQL, Transact-SQL(T-SQL), BatchScript, JavaScript, R, HTML, CSS
 + **Data Visualisation Tools**: Tableau, Google Analytics, PowerPoint, Keynote
-+ **Database Applications**:  SQL Server Management Studio (SSMS), SQL Server Integration Service (SSIS), SAP HANA
++ **Database Applications**:  SQL Server Management Studio (SSMS), SQL Server Integration Service (SSIS), HANA
 + **Cloud Platform Services**: Microsoft Azure, SAP Cloud Platform
 + **IDE/Code Compiler**:     Visual Studio, R Studio, Jupyter Notebook, Spyder
 + **Automation/API**:        Microsoft Power Automate, Postman
