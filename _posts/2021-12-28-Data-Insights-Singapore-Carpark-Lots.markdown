@@ -27,7 +27,7 @@ Some frequented places like shopping malls and hotels have limited available par
 
 ![Singapore Car Park Analysis ](https://user-images.githubusercontent.com/43693494/147570674-7f8917c6-a776-4ff3-a900-8863a3281e5f.png)
 
-Click on this[link] or the copy the link below to your search bar to view the interactive dashboard on Singapore Carpark Lot:
+Click on this **[link]** or the copy the link below to your search bar to view the interactive dashboard on Singapore Carpark Lot:
 https://public.tableau.com/shared/8RGP5ZBMJ?:display_count=n&:origin=viz_share_link
 
 [link]: https://public.tableau.com/shared/8RGP5ZBMJ?:display_count=n&:origin=viz_share_link
