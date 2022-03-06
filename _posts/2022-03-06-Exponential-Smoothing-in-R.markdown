@@ -54,24 +54,25 @@ The initial condition, `T_1 = 0`
 We can deal with cyclic patterns in the same way as trend, by making them an **additive** component of the formula (which is the right thing to do in some cases).
 We can also deal with the cyclic patterns, which are also called seasonalities in a **multiplicative** way.
 
-**Include both trend and seasonality:**
+**Include both trend and seasonality:** <br>
 `S_t = alpha*X_t / C_t-L  +  (1- alpha)(S_t-1 + T_t-1)`
 
 `L` is the length of a cycle
 `C_t` is the multiplicative seasonality factor for the time `t`. 
 The seasonality factor will help us inflate or deflate the observation, based on the part of the cycle that time period `t` is in.
 
-**For trend**
+**For trend** <br>
 The initial condition to find out what `C_t-L` is a the beginning, 
 `T_1 = 0` (indicates no initial trend)
 
-**For multiplicative seasonality**
-Multiplying by 1 shows no initial cylic effect and we need `L` of them, so the first `L` values of `C` are set to 1
+**For multiplicative seasonality** <br>
+Multiplying by `1` shows no initial cylic effect and we need `L` of them, so the first `L` values of `C` are set to `1`
 
 Depending on how many aspects like trend and seasonality is included, sometimes, this method is called single, double or triple exponential smoothing. 
 Triple exponential smoothing with the base equation, plus trend an seasonality is also called Winter's Method, or Holt-Winters.
 
-###3. What the Name Exponential Smoothing Means
-The exponential smoothing curve basically smooth out high peaks and valleys of a data set plotted as a graph. Every single past observation contributes to the current baseline estimate `S_t`. All the older data points are considered into the term `S_t-1`. Because `1 - alpha` is less than 1, newer obervations are weighted more than old observations. Exponential smoothing method accounts for all past observations, with the more recent observations being more important (with higher weights) to the current baseline estimate.
+### 3. What the Name Exponential Smoothing Means
+The exponential smoothing curve basically smooth out high peaks and valleys of a data set plotted as a graph. Every single past observation contributes to the current baseline estimate `S_t`. All the older data points are considered into the term `S_t-1`. <br>
+Because `1 - alpha` is less than 1, newer obervations are weighted more than old observations. Exponential smoothing method accounts for all past observations, with the more recent observations being more important (with higher weights) to the current baseline estimate.
 
-To be continued... (need to prepare for my mid-terms and will complete this post after that!)
+To be continued... ... (need to prepare for my mid-terms and will complete this post after that!)
