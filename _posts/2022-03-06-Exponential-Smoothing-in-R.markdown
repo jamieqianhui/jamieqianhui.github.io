@@ -40,6 +40,11 @@ This method does not deal with trends (e.g. summer temperature increasing over t
 ### 2: Trends and Cyclic Effects
 
 Let's call `T_t` the trend at time period `t`.
-Our baseline `S_t = alpha*x_t + (1-alpha)(S_t-1 + T_t-1)
+Our baseline `S_t = alpha*x_t + (1-alpha)(S_t-1 + T_t-1)`
+With our previous estimate `S_t-1` now included a trend term `T_t-1` and we can estimate the new trend `T_t`, just like how we do for the baseline.
+
+`T_t = beta(S_t - S_t-1 ) + (1 - beta)(T_t-1 )`
+
+The initial condition, `T_1 = 0`
 
 To be continued... (need to prepare for my mid-terms and will complete this post after that!)
