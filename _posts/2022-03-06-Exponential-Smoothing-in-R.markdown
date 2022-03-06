@@ -2,16 +2,17 @@
 layout: post
 title:  "Exponential Smoothing Model for analyzing time series data"
 date:   2022-03-06 15:53:58 +0800
-categories: R ExponentialSmoothing
+categories: R TimeSeries
 ---
 
-As part of my analytics master studies, I took a module which covered a topic on how to build an **exponential smoothing model** to help us make a judgment of whether the unofficial end of summer has gotten later in Atlanta, Georgia, United States. I've learnt a great deal from this course and would like to share some of the key takeaways that I've understood from the module. In one of the weekly homework, we are tasked to determine whether the summer period has ended later over the 20 years, using daily high temperature data for Atlanta (July through October) and by coding in R. Click on *'Read more'* below to continue reading this post!
+As part of my analytics master studies, I took a module which covered a topic on how to build an **exponential smoothing model** to help us make a judgment of whether the unofficial end of summer has gotten later in Atlanta, Georgia, United States. I've learnt a great deal from this course and would like to share some of the takeaways that I've understood from the module. In one of the weekly homework, we are tasked to determine whether the summer period has ended later over the 20 years, using daily high temperature data for Atlanta (July through October) and by coding in R. Click on *'Read more'* below to continue reading this post!
 
 {: class="table-of-content"}
 * TOC
 {:toc}
 
-Well, to honor the learning process, I will not be sharing the completed codes in R on how I finished the assignment. Instead, I will be sharing on the key concepts and logic flow on what I learnt, how I approach the assignment and eventually derived at the solution.
+Well, to honor the learning process, I will **not** be sharing the completed codes in R on how I finished the assignment. Instead, I will be sharing on the key concepts and logic flow on what I learnt, how I approach the assignment and eventually derived at the solution.
+
 
 ## Using Exponential Smoothing Model to determine temperature change (time series data)
 
@@ -22,9 +23,9 @@ Let's call `S_t` the expected baseline response for time period `t`. The expecte
 
 There are 2 ways we might answer this question. 
 1. We might think the observed temperature is a real indicator of the baseline. 
-2. So, `S<sub>t = X<sub>t`
+2. So, `S_t = X_t`
 3. Or we might think there is no change to the baseline and the higher observed temperature today is just due to random luck. 
-4. So `S_t = S_t - 1` (Which also means today's baseline is the same as yesterday's baseline)
+4. So `S_t = S_t-1` (Which also means today's baseline is the same as yesterday's baseline)
 
 The exponential smoothing method combines these 2 ideas. 
 `S_t = alpha*x_t + (1 - alpha)S_t-1`
@@ -42,11 +43,29 @@ This method does not deal with trends (e.g. summer temperature increasing over t
 ### 2: Trends and Cyclic Effects
 
 Let's call `T_t` the trend at time period `t`.
-Our baseline `S_t = alpha*x_t + (1-alpha)(S_t-1 + T_t-1)`
-With our previous estimate `S_t-1` now included a trend term `T_t-1` and we can estimate the new trend `T_t`, just like how we do for the baseline.
+1. Our baseline `S_t = alpha*x_t + (1-alpha)(S_t-1 + T_t-1)`
+2. With our previous estimate `S_t-1` now included a trend term `T_t-1` 
+3. and we can estimate the new trend `T_t`, just like how we do for the baseline:
 
-`T_t = beta(S_t - S_t-1 ) + (1 - beta)(T_t-1 )`
+> `T_t = beta(S_t - S_t-1) + (1 - beta)(T_t-1)`
 
 The initial condition, `T_1 = 0`
+
+We can deal with cyclic patterns in the same way as trend, by making them an **additive** component of the formula (which is the right thing to do in some cases).
+We can also deal with the cyclic patterns, which are also called seasonalities in a **multiplicative** way.
+
+**Include both trend and seasonality:**
+`S_t = alpha*X_t / C_t-L  +  (1- alpha)(S_t-1 + T_t-1)`
+
+`L` is the length of a cycle
+`C_t` is the multiplicative seasonality factor for the time `t`. 
+The seasonality factor will help us inflate or deflate the observation, based on the part of the cycle that time period `t` is in.
+
+**For trend**
+The initial condition to find out what `C_t-L` is a the beginning, 
+`T_1 = 0` (indicates no initial trend)
+
+**For multiplicative seasonality**
+Multiplying by 1 shows no initial cylic effect and we need `L` of them, so the first `L` values of `C` are set to 1
 
 To be continued... (need to prepare for my mid-terms and will complete this post after that!)
