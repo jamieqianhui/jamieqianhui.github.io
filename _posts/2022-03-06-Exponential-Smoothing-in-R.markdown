@@ -5,7 +5,7 @@ date:   2022-03-06 15:53:58 +0800
 categories: R ExponentialSmoothing
 ---
 
-As part of my analytics master studies, I took a module which covered a topic on how to build an exponential smoothing model to help us make a judgment of whether the unofficial end of summer has gotten later in Atlanta, Georgia, United States. I've learnt a great deal from this course and would like to share some of the key takeaways that I've understood from the module. In one of the weekly homework, we are tasked to determine whether the summer period has ended later over the 20 years, using daily high temperature data for Atlanta (July through October) and by coding in R. Click on 'Read more' below to continue reading this post!
+As part of my analytics master studies, I took a module which covered a topic on how to build an **exponential smoothing model** to help us make a judgment of whether the unofficial end of summer has gotten later in Atlanta, Georgia, United States. I've learnt a great deal from this course and would like to share some of the key takeaways that I've understood from the module. In one of the weekly homework, we are tasked to determine whether the summer period has ended later over the 20 years, using daily high temperature data for Atlanta (July through October) and by coding in R. Click on *'Read more'* below to continue reading this post!
 
 {: class="table-of-content"}
 * TOC
@@ -21,8 +21,10 @@ The price of a stock every few seconds, daily sales of hamburgers at a fast food
 Let's call `S_t` the expected baseline response for time period `t`. The expected summer temperature in Atlanta at hour `t` of the day, for example. Let's call `X_t` the observed response, the actual summer temperature in Atlanta measured at time `t`. If we want to figure out what the summer temperature actually is over time without all the random variations but the temperature today is different from yesterday's, what does that mean? Does that indicate an increase in the baseline or was it just due to randomness? 
 
 There are 2 ways we might answer this question. 
-1. We might think the observed temperature is a real indicator of the baseline. So `S_t = X_t`
-2. Or we might think there is no change to the baseline and the higher observed temperature today is just due to random luck. So `S_t = S_t - 1` (Which also means today's baseline is the same as yesterday's baseline)
+1. We might think the observed temperature is a real indicator of the baseline. 
+2. So, `S<sub>t = X<sub>t`
+3. Or we might think there is no change to the baseline and the higher observed temperature today is just due to random luck. 
+4. So `S_t = S_t - 1` (Which also means today's baseline is the same as yesterday's baseline)
 
 The exponential smoothing method combines these 2 ideas. 
 `S_t = alpha*x_t + (1 - alpha)S_t-1`
