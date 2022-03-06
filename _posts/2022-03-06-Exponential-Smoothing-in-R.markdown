@@ -2,7 +2,7 @@
 layout: post
 title:  "Exponential Smoothing Model for analyzing time series data"
 date:   2022-03-06 15:53:58 +0800
-categories: R ExponentialSmoothing
+categories: R TimeSeries
 ---
 
 As part of my analytics master studies, I took a module which covered a topic on how to build an **exponential smoothing model** to help us make a judgment of whether the unofficial end of summer has gotten later in Atlanta, Georgia, United States. I've learnt a great deal from this course and would like to share some of the takeaways that I've understood from the module. In one of the weekly homework, we are tasked to determine whether the summer period has ended later over the 20 years, using daily high temperature data for Atlanta (July through October) and by coding in R. Click on *'Read more'* below to continue reading this post!
@@ -69,6 +69,9 @@ The initial condition to find out what `C_t-L` is a the beginning,
 Multiplying by 1 shows no initial cylic effect and we need `L` of them, so the first `L` values of `C` are set to 1
 
 Depending on how many aspects like trend and seasonality is included, sometimes, this method is called single, double or triple exponential smoothing. 
-
 Triple exponential smoothing with the base equation, plus trend an seasonality is also called Winter's Method, or Holt-Winters.
+
+###3. What the Name Exponential Smoothing Means
+The exponential smoothing curve basically smooth out high peaks and valleys of a data set plotted as a graph. Every single past observation contributes to the current baseline estimate `S_t`. All the older data points are considered into the term `S_t-1`. Because `1 - alpha` is less than 1, newer obervations are weighted more than old observations. Exponential smoothing method accounts for all past observations, with the more recent observations being more important (with higher weights) to the current baseline estimate.
+
 To be continued... (need to prepare for my mid-terms and will complete this post after that!)
