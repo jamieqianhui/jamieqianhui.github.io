@@ -23,19 +23,15 @@ Let's call `S_t` the expected baseline response for time period `t`. The expecte
 
 There are 2 ways we might answer this question. 
 1. We might think the observed temperature is a real indicator of the baseline. So,
-```markdown 
-$S_t = X_t$
-```
-2. Or we might think there is no change to the baseline and the higher observed temperature today is just due to random luck. 
-```markdown
-So $S_t = S_t-1$ 
-```
+`S_t = X_t`
+
+2. Or we might think there is no change to the baseline and the higher observed temperature today is just due to random luck. So,
+$S_t = S_t-1$ 
+
 (Which also means today's baseline is the same as yesterday's baseline)
 
 The exponential smoothing method combines these 2 ideas. 
-```markdown
-$S_t = alpha*x_t + (1 - alpha)S_t-1$ 
-```
+$S_t = `\alpha`*x_t + (1 - `\alpha`)S_t-1$ 
 *Where alpha is just a number between 0 and 1.* 
 
 So if there is alot of randomness in the temperature system, then fluctuations are likely due to randomness and we should make alpha closer to 0. This is because yesterday's baseline temperature is probably a good indicator of today's baseline, even if we observed something different today. 
