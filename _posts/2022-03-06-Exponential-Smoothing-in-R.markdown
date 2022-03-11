@@ -74,8 +74,10 @@ Multiplying by `1` shows no initial cylic effect and we need `L` of them, so the
 Depending on how many aspects like trend and seasonality is included, sometimes, this method is called single, double or triple exponential smoothing. 
 Triple exponential smoothing with the base equation, plus trend an seasonality is also called Winter's Method, or Holt-Winters.
 
-### 3. What the Name Exponential Smoothing Means
+### 3. What does the name Exponential Smoothing mean
 The exponential smoothing curve basically smooth out high peaks and valleys of a data set plotted as a graph. Every single past observation contributes to the current baseline estimate `S_t`. All the older data points are considered into the term `S_t-1`. <br>
 Because `1 - alpha` is less than 1, newer obervations are weighted more than old observations. Exponential smoothing method accounts for all past observations, with the more recent observations being more important (with higher weights) to the current baseline estimate.
-
+.
+.
+.
 To be continued... ... (need to prepare for my mid-terms and will complete this post after that!)
