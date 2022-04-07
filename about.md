@@ -5,9 +5,9 @@ title:  "About"
 ---
 
 ## About
-**Hello! Welcome to my blog!** This is a space where I document my learnings, share data analytics codes and concepts related to automation and visualizations with data enthusiasts! 
+**Hello! Welcome to my blog!** This is a space where I document new learnings, share data analytics related codes and concepts (e.g. visualizations, processing data) with data enthusiasts! 
 <br><br> 
-Aside from my full-time job, I am concurrently pursuing a part-time master of science degree at Georgia Institute of Technology, majoring in **[Analytics][Analytics]**. My schedule has now been (enjoyably) more busy balancing a full-time job, a part-time master degree and my personal life all together! Tbh, it can be hectic but still manageable and fulfilling ;)  
+Aside from my full-time job, I am concurrently pursuing a part-time master of science degree at Georgia Institute of Technology, majoring in **[Analytics][Analytics]**. My schedule has now been (enjoyably) busier balancing a full-time job, a part-time master degree and my personal life all together! Tbh, it can be hectic but still manageable and fulfilling ;)  
 
 <br>
 
