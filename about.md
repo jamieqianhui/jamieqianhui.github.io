@@ -7,7 +7,6 @@ title:  "About"
 ## About
 **Hello! Welcome to my blog!** This is a space where I document new learnings, share data analytics related codes and concepts (e.g. visualizations, processing data) with data enthusiasts! 
 <br><br> 
-Aside from my full-time job, I am concurrently pursuing a part-time master of science degree at Georgia Institute of Technology, majoring in **[Analytics][Analytics]**. My schedule has now been (enjoyably) busier balancing a full-time job, a part-time master degree and my personal life all together! Tbh, it can be hectic but still manageable and fulfilling ;)  
 
 <br>
 
@@ -33,5 +32,4 @@ I enjoy working on new challenges, learning new skills (currently learning basic
 
 
 [Linkedin]: https://www.linkedin.com/in/jamieluqh
-[Analytics]: https://pe.gatech.edu/degrees/analytics/curriculum
 
