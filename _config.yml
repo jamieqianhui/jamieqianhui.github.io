@@ -12,7 +12,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Jamie Lu
-  tagline: Asset Management | Analytics & Design
+  tagline: Asset Mgmt & Analytics
   date_format: "%b %-d, %Y"
   analytics_id: 'UA-142135918-1'
   sitemap: true
