@@ -1,4 +1,4 @@
-title: Jamie Lu - Data Analytics | Design & Visualization
+title: Jamie Lu - Asset Mgmt | Data Analytics | Design & Visualization
 author: GitHub User
 email: jamieqianhui@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
@@ -12,7 +12,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Jamie Lu
-  tagline: Data Analytics & Design
+  tagline: Asset Management | Analytics & Design
   date_format: "%b %-d, %Y"
   analytics_id: 'UA-142135918-1'
   sitemap: true
