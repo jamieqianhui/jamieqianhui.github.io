@@ -14,7 +14,7 @@ It's been awhile since I've updated my blog! Wanted to provide a brief update on
 ## Asset Management in Private Equity Real Estate
 
 
-### 1: Portfolio Management
+### 1: Asset & Portfolio Management for Asia Pacific
 
 
-### 2: Global Data & Analytics
+### 2: Global Data & Analytics (Reporting)
