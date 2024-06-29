@@ -17,4 +17,4 @@ It's been awhile since I've updated my blog! Wanted to provide a brief update on
 ### 1: Asset & Portfolio Management for Asia Pacific
 
 
-### 2: Global Data & Analytics (Reporting)
+### 2: Global Data & Analytics
