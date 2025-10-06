@@ -35,12 +35,9 @@ Core-plus investments slightly elevate the risk spectrum while maintaining many 
 - Require modest property improvements
 - Present opportunities for operational enhancements or lease restructuring
 - Exist in strong but not necessarily gateway markets
+  
 The strategy aims to generate returns of approx range 9-12% annually through a combination of stable income and modest appreciation. Core-plus often involves light value-creation opportunities, such as improving property management, modest renovations, or re-tenanting a small portion of the property.
 
-### Core-plus investment examples
-A well-maintained apartment complex in a growing suburban area with minor deferred maintenance
-A high-quality mixed-use property in a secondary market that requires some lease-up efforts
-Rationale: These investments offer a balance between stability and growth potential. Opportunities for minor improvements can enhance value.
 
 ### Value-add investments
 Value-add strategies involve significant improvement to underperforming properties to substantially increase income and value. These investments typically feature:
@@ -49,6 +46,7 @@ Value-add strategies involve significant improvement to underperforming properti
 - Assets requiring significant renovation or repositioning
 - Opportunities for substantial lease-up or tenant improvement
 - Markets with strong fundamentals but temporary challenges
+  
 Target returns range from 12-18% annually, with a greater portion coming from appreciation after successful execution. Successful value-add execution requires deep market knowledge, strong operational expertise, and disciplined capital deployment to avoid scope creep.
 
 
@@ -60,6 +58,7 @@ The highest-risk, highest-potential-return strategy in commercial real estate in
 - Properties with significant vacancy or obsolescence issues
 - Investments in emerging markets or alternative property types
 - Special situations like distressed debt or recapitalization
+  
 These investments target returns exceeding 18% annually but involve substantial execution risk, including development, leasing, and market timing risks. Success in opportunistic investing depends on specialized expertise, market cycle awareness, and the ability to solve complex problems.
 
 ### Investment Vehicles: REITs and Private Equity Funds
