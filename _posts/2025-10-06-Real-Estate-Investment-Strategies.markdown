@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Real Estate Investment Strategies"
-date:   2025-06-10 11:56:09 +0800
+date:   2025-10-06 11:56:09 +0800
 categories: Asset Management PERE
 ---
 
