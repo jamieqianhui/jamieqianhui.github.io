@@ -25,7 +25,7 @@ From time to time, I would journal what I learnt in asset management or just any
 <br>
 
 ## Contact Me
-I enjoy working on new challenges, learning new skills (currently learning basic French and Japanese during my additional pockets of free time) as well as designing engaging and effective visualizations. About 2 years ago, I transitioned my data career into private equity, focusing on asset & portfolio management. It's been an exciting journey so far in asset management and i'm enjoying my job everyday, so feel free to reach out to me via **[LinkedIn][Linkedin]** for anything related to asset management and/or data analytics! 
+I enjoy working on new challenges, learning new skills (currently learning basic French and Japanese during my additional pockets of free time) as well as designing engaging and effective visualizations. About 3 years ago, I transitioned my data career into private equity, focusing on asset & portfolio management. It's been an exciting journey so far in asset management and i'm enjoying my job everyday, so feel free to reach out to me via **[LinkedIn][Linkedin]** for anything related to asset management and/or data analytics! 
 
 <br>
 <br>
