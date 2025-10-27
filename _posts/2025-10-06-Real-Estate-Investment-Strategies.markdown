@@ -6,7 +6,7 @@ categories: Asset Management PERE
 ---
 
 Crossing the 3rd year mark of my career in Real Estate Private Equity.
-As I reflect on three years in real estate private equity, I've had the opportunity to work across various investment strategies, each with distinct risk-return profiles. For professionals new to the industry or investors looking to diversify their portfolios, understanding these fundamental approaches to commercial real estate investing is essential. Sharing some insights gained from my journey so far.
+As I reflect on three years in real estate private equity, I've had the opportunity to work across various investment strategies, each with distinct risk-return profiles. For professionals new to the industry or investors looking to diversify their portfolios, understanding these fundamental approaches to commercial real estate investing is essential. Sharing some insights gained from my journey so far. Click on *"Read more"* or the subject title **"Real Estate Investment Strategies"** for my write up.
 
 - **Core investments**:  The Foundation of Stability
 - **Core-plus investments**: Enhanced Returns with Moderate Risk
